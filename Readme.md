@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга Огаркова](https://up.htmlacademy.ru/adaptive/15/user/683947).
-* Наставник: `Неизвестно`.
+* Наставник: [Слава Милин](https://htmlacademy.ru/profile/id500603).
 
 ---
 
