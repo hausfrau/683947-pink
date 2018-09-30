@@ -220,14 +220,14 @@
       </ul>
     </div>
   </section>
-  <p class="slogan">
-    Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-  </p>
-  <section class="photo-editor">
-    <h3 class="visually-hidden">
-      Редактор фотографий
+  <form class="photo-editor-form photo-editor" action="https://echo.htmlacademy.ru" method="post">
+    <h3 class="slogan">
+      Затмите их всех! Выкладывайте все, что накопилось в телефоне!
     </h3>
-    <img class="photo-editor__image" src="http://placehold.it/150x100" width="150" height="100" alt="">
+    <div class="photo-editor__photo">
+      <img class="photo-editor__image" src="http://placehold.it/150x100" width="150" height="100" alt="">
+      <input class="photo-editor__input visually-hidden" type="file" name="post-image">
+    </div>
     <div class="photo-editor__tools tools">
       <div class="tools__wrapper">
         <label class="tools__crop-label label--radio" for="crop">
@@ -256,7 +256,7 @@
     <button class="photo-editor__reset reset" type="reset">
       Отмена
     </button>
-  </section>
+  </form>
 </main>
 <footer class="page-footer">
   <p class="logo">
