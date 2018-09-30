@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<header class="page-header">
+  <h1>
+    Конкурс на самое безбашенное путешествие с Пинк
+  </h1>
+  <a class="page-header__logo" href="#">
+    <img class="page-header__logo-img" src="http://placehold.it/150x100" width="150" height="100" alt="Пинк">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__open button" type="button">
+      Открыть меню
+    </button>
+    <button class="main-nav__close button" type="button">
+      Закрыть
+    </button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">
+            Фотографии
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a>
+            Конкурс
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="page-form">
+  <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
+    <h2>
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
+      заполните форму ниже:
+    </h2>
+    <section class="name">
+      <div class="name__wrapper">
+        <label for="last-name" class="name__last label--text">
+          Фамилия:
+        </label>
+        <input id="last-name" class="name__last input--text" type="text" name="name" value=""
+               placeholder="Укажите фамилию *">
+        <label for="first-name" class="name__first label--text">
+          Имя:
+        </label>
+        <input id="first-name" class="name__first input--text" type="text" name="name" value=""
+               placeholder="Введите ваше имя *">
+        <label for="patronymic-name" class="name__patronymic label--text">
+          Отчество:
+        </label>
+        <input id="patronymic-name" class="name__patronymic input--text" type="text" name="name" value=""
+               placeholder="Ну и отчество тоже">
+      </div>
+    </section>
+    <section class="achievements">
+      <h2>
+        Ваши безбашенные достижения в путешествии
+      </h2>
+      <div class="achievements__wrapper">
+        <ul class="achievements__list">
+          <li class="achievements__item">
+            <input class="achievements__checkbox input--checkbox" type="checkbox" name="achievements"
+                   value="shark-photo"
+                   id="shark-photo"
+                   checked>
+            <label class="achievements__label label--checkbox" for="shark-photo">
+              Сделал селфи с акулой
+            </label>
+          </li>
+          <li class="achievements__item">
+            <input class="achievements__checkbox input--checkbox" type="checkbox" name="achievements"
+                   value="beach-burnt"
+                   id="beach-burnt"
+                   checked>
+            <label class="achievements__label label--checkbox" for="beach-burnt">
+              Обгорел на пляже
+            </label>
+          </li>
+          <li class="achievements__item">
+            <input class="achievements__checkbox input--checkbox" type="checkbox" name="achievements" value="saw-norris"
+                   id="saw-norris">
+            <label class="achievements__label label--checkbox" for="saw-norris">
+              Видел Чака Норриса
+            </label>
+          </li>
+          <li class="achievements__item">
+            <input class="achievements__checkbox input--checkbox" type="checkbox" name="achievements"
+                   value="bought-souvenirs"
+                   id="bought-souvenirs">
+            <label class="achievements__label label--checkbox" for="bought-souvenirs">
+              Накупил сувениров
+            </label>
+          </li>
+          <li class="achievements__item">
+            <input class="achievements__checkbox input--checkbox" type="checkbox" name="achievements" value="kept-tower"
+                   id="kept-tower"
+                   checked>
+            <label class="achievements__label label--checkbox" for="kept-tower">
+              Удержал башню
+            </label>
+          </li>
+          <li class="achievements__item">
+            <input class="achievements__checkbox input--checkbox" type="checkbox" name="achievements"
+                   value="wreck-hotel"
+                   id="wreck-hotel">
+            <label class="achievements__label label--checkbox" for="wreck-hotel">
+              Разгромил отель
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <label for="phone" class="contacts__phone label--text">
+          Номер телефона
+        </label>
+        <input id="phone" class="contacts__phone input--text" type="text" name="name" value=""
+               placeholder="Номер, пожалуйста">
+        <label for="email" class="contacts__email label--text">
+          Адрес почты
+        </label>
+        <input id="email" class="contacts__email input--text" type="text" name="name" value=""
+               placeholder="Введите почту *">
+      </div>
+    </section>
+    <section class="apps">
+      <div class="apps__wrapper">
+        <h2>
+          С каким приложением путешествовали?
+        </h2>
+        <input class="apps__input input--radio" type="radio" name="apps" value="ios" id="ios" checked>
+        <label class="apps__label label--radio" for="ios">
+          Pink для iOS
+        </label>
+        <input class="apps__input input--radio" type="radio" name="apps" value="android" id="android">
+        <label class="apps__label label--radio" for="android">
+          Pink на Android
+        </label>
+        <input class="apps__input input--radio" type="radio" name="apps" value="windows" id="windows">
+        <label class="apps__label label--radio" for="windows">
+          Windows Phone
+        </label>
+      </div>
+    </section>
+    <section class="feedback">
+      <h2 class="visually-hidden">
+        Оставьте свой отзыв
+      </h2>
+      <label class="feedback__label label--textarea" for="feedback">
+        Опишите свои эмоции
+      </label>
+      <textarea class="feedback__content" name="feedback" id="feedback"
+                placeholder="Можно прям в красках, не стесняясь в выражениях">
+    </textarea>
+    </section>
+    <button class="competition-form__submit" type="submit">
+      Отправить форму
+    </button>
+    <p class="competition-form__note note">
+    <span class="note--symbol">
+      *
+    </span>
+      <span class="note--content">
+      — обязательные поля
+    </span>
+    </p>
+  </form>
+</main>
+<footer class="page-footer">
+  <p class="logo">
+    <img class="logo__image logo__image--footer" src="http://placehold.it/150x100" width="150" height="100"
+         alt="Розовые очки">
+    <span class="logo__content">
+      Pink
+    </span>
+  </p>
+  <section class="socials">
+    <div class="socials__wrapper">
+      <ul class="socials__list">
+        <li class="socials__item socials">
+          <a class="socials__link" href="#">
+            <img class="socials--twitter" src="http://placehold.it/150x100" width="150" height="100"
+                 alt="twitter">
+          </a>
+        </li>
+        <li class="socials__item socials">
+          <a class="socials__link" href="#">
+            <img class="socials--facebook" src="http://placehold.it/150x100" width="150" height="100"
+                 alt="facebook">
+          </a>
+        </li>
+        <li class="socials__item socials">
+          <a class="socials__link" href="#">
+            <img class="socials--youtube" src="http://placehold.it/150x100" width="150" height="100"
+                 alt="youtube">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <a class="academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+    Разработано
+    <img class="academy-link__image" src="http://placehold.it/150x100" width="150" height="100"
+         alt="HTML Academy">
+  </a>
+</footer>
+</body>
+</html>
