@@ -1,0 +1,58 @@
+.main-nav {
+  width: 320px;
+  margin-bottom: -69px;
+  background-color: #283645;
+  font-size: $middle-font-size;
+  font-weight: $bold-font-weight;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.main-nav__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.main-nav__logo {
+  margin: 0;
+  color: transparent;
+}
+
+.main-nav__button {
+  @include reset-button;
+  width: 50px;
+  height: 24px;
+  background-image: url("../../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+}
+
+.main-nav__wrapper {
+  display: block;
+}
+
+.main-nav__button:hover {
+  background-image: url("../../img/icon-menu-burger-hover.svg");
+  background-repeat: no-repeat;
+}
+
+.main-nav__logo-wrapper:active + .main-nav__wrapper {
+  display: block;
+}
+
+.main-nav__background {
+  min-height: 462px;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-nav__background::after {
+  content: "";
+  position: absolute;
+  width: 258px;
+  height: 286px;
+  bottom: 0;
+  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+}
