@@ -8,6 +8,7 @@
 
 .download__button {
   display: inline-block;
+
   @include reset-button;
   margin: 27px 0;
   padding: 12px 16px;

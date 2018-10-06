@@ -28,12 +28,10 @@
   color: inherit;
 }
 
-.site-list__link:hover,
-.site-list__link:focus {
+.site-list__link:hover {
   color: $crimson-color;
 }
 
 .site-list__link:active {
   color: $basic-down-color;
 }
-
