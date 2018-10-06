@@ -1,0 +1,37 @@
+.site-list {
+  background-color: #283645;
+  text-align: center;
+
+  @include reset-list;
+}
+
+.site-list__item {
+  padding: 20px;
+  box-shadow: 0 1px 0 #000000 inset, 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.site-list__item:hover,
+.site-list__item:focus {
+  color: $crimson-color;
+}
+
+.site-list__item:active {
+  color: $basic-down-color;
+}
+
+.site-list__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.site-list__link:visited {
+  color: inherit;
+}
+
+.site-list__link:hover {
+  color: $crimson-color;
+}
+
+.site-list__link:active {
+  color: $basic-down-color;
+}

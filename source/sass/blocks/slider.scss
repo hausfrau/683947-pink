@@ -1,0 +1,14 @@
+.slider__list {
+  @include reset-list;
+}
+
+.slider__user-name {
+  font-size: $middle-font-size;
+  font-weight: $bold-font-weight;
+  line-height: 30px;
+  color: $black-color;
+}
+
+.slider__content {
+  line-height: 30px;
+}

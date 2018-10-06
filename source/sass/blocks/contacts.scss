@@ -1,0 +1,29 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contacts__list {
+  @include reset-list;
+}
+
+.contacts__title {
+  @include resetTitle;
+  font-size: $big-font-size;
+  font-weight: $light-font-weight;
+}
+
+.contacts__text {
+  font-size: $middle-font-size;
+  font-weight: $bold-font-weight;
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__address {
+  margin: 0;
+  font-size: $big-font-size;
+  font-weight: $light-font-weight;
+  color: $crimson-color;
+}

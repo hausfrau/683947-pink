@@ -1,0 +1,10 @@
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-footer__academy-link {
+  @include reset-button;
+  text-decoration: none;
+  line-height: 18px;
+}

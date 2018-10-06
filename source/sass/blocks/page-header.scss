@@ -1,0 +1,14 @@
+.page-header {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  background-color: #2b3b4b;
+  min-height: 462px;
+  color: $white-color;
+}
+
+.page-header__title {
+  @include resetTitle;
+  font-size: $big-font-size;
+  font-weight: $light-font-weight;
+}

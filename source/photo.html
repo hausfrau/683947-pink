@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
-  <h1>
+  <h1 class="page-header__title">
     Фотографии пользователей
   </h1>
-  <a class="page-header__logo" href="#">
-    <img class="page-header__logo-img" src="http://placehold.it/150x100" width="150" height="100" alt="Пинк">
-  </a>
   <nav class="main-nav">
-    <button class="main-nav__button button" type="button">
-      Меню
-    </button>
+    <div class="main-nav__logo-wrapper">
+      <a class="main-nav__logo" href="#">
+        <img class="main-nav__logo-img" src="./img/logo-pink-white-mobile.svg" width="74" height="22" alt="Пинк">
+      </a>
+      <button class="main-nav__button button" type="button">
+        <span class="visually-hidden">
+          Меню
+        </span>
+      </button>
+    </div>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
@@ -50,7 +56,7 @@
     <div class="photos__wrapper">
       <ul class="photos__list">
         <li class="photos__item photos__item--day-panorama">
-          <img class="photos__image" src="http://placehold.it/150x100" width="150" height="100" alt="Фото пользователя">
+          <img class="photos__image" src="./img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото пользователя">
           <p class="photos__user">
             <strong class="photos__user-name">
               Анна
@@ -64,7 +70,7 @@
             вопросы!
           </p>
           <p class="photos__likes">
-            <img class="photos__likes-icon" src="http://placehold.it/150x100" width="150" height="100" alt="">
+            <img class="photos__likes-icon" src="./img/icon-heart-crimson.svg" width="12" height="11" alt="">
             <span class="photos__likes-text">
               Нравится:
             </span>
@@ -74,7 +80,7 @@
           </p>
         </li>
         <li class="photos__item">
-          <img class="photos__image" src="http://placehold.it/150x100" width="150" height="100" alt="Фото пользователя">
+          <img class="photos__image" src="./img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
           <p class="photos__user">
             <strong class="photos__user-name">
               Левон
@@ -87,7 +93,7 @@
             Вчера он на луну летал, сегодня в руки к нам попал.
           </p>
           <p class="photos__likes">
-            <img class="photos__likes-icon" src="http://placehold.it/150x100" width="150" height="100" alt="">
+            <img class="photos__likes-icon" src="./img/icon-heart-crimson.svg" width="12" height="11" alt="">
             <span class="photos__likes-text">
               Нравится:
             </span>
@@ -97,7 +103,7 @@
           </p>
         </li>
         <li class="photos__item">
-          <img class="photos__image" src="http://placehold.it/150x100" width="150" height="100" alt="Фото пользователя">
+          <img class="photos__image" src="./img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
           <p class="photos__user">
             <strong class="photos__user-name">
               Антон
@@ -110,7 +116,7 @@
             Соседи будут рады!
           </p>
           <p class="photos__likes">
-            <img class="photos__likes-icon" src="http://placehold.it/150x100" width="150" height="100" alt="">
+            <img class="photos__likes-icon" src="./img/icon-heart-crimson.svg" width="12" height="11" alt="">
             <span class="photos__likes-text">
               Нравится:
             </span>
@@ -120,7 +126,7 @@
           </p>
         </li>
         <li class="photos__item">
-          <img class="photos__image" src="http://placehold.it/150x100" width="150" height="100" alt="Фото пользователя">
+          <img class="photos__image" src="./img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
           <p class="photos__user">
             <strong class="photos__user-name">
               Борис
@@ -133,7 +139,7 @@
             Здесь могла быть ваша цитата о высоком и вечном.
           </p>
           <p class="photos__likes">
-            <img class="photos__likes-icon" src="http://placehold.it/150x100" width="150" height="100" alt="">
+            <img class="photos__likes-icon" src="./img/icon-heart-crimson.svg" width="12" height="11" alt="">
             <span class="photos__likes-text">
               Нравится:
             </span>
@@ -143,7 +149,7 @@
           </p>
         </li>
         <li class="photos__item">
-          <img class="photos__image" src="http://placehold.it/150x100" width="150" height="100" alt="Фото пользователя">
+          <img class="photos__image" src="./img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
           <p class="photos__user">
             <strong class="photos__user-name">
               Сергей
@@ -156,7 +162,7 @@
             Самая кубанская в мире!
           </p>
           <p class="photos__likes">
-            <img class="photos__likes-icon" src="http://placehold.it/150x100" width="150" height="100" alt="">
+            <img class="photos__likes-icon" src="./img/icon-heart-crimson.svg" width="12" height="11" alt="">
             <span class="photos__likes-text">
               Нравится:
             </span>
@@ -166,7 +172,7 @@
           </p>
         </li>
         <li class="photos__item">
-          <img class="photos__image" src="http://placehold.it/150x100" width="150" height="100" alt="Фото пользователя">
+          <img class="photos__image" src="./img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
           <p class="photos__user">
             <strong class="photos__user-name">
               Максим
@@ -179,7 +185,7 @@
             Где снег-то?
           </p>
           <p class="photos__likes">
-            <img class="photos__likes-icon" src="http://placehold.it/150x100" width="150" height="100" alt="">
+            <img class="photos__likes-icon" src="./img/icon-heart-crimson.svg" width="12" height="11" alt="">
             <span class="photos__likes-text">
               Нравится:
             </span>
@@ -189,7 +195,7 @@
           </p>
         </li>
         <li class="photos__item">
-          <img class="photos__image" src="http://placehold.it/150x100" width="150" height="100" alt="Фото пользователя">
+          <img class="photos__image" src="./img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
           <p class="photos__user">
             <strong class="photos__user-name">
               Надежда
@@ -202,7 +208,7 @@
             Всем GM и взаимные лайки!
           </p>
           <p class="photos__likes">
-            <img class="photos__likes-icon" src="http://placehold.it/150x100" width="150" height="100" alt="">
+            <img class="photos__likes-icon" src="./img/icon-heart-crimson.svg" width="12" height="11" alt="">
             <span class="photos__likes-text">
               Нравится:
             </span>
@@ -219,20 +225,20 @@
       Затмите их всех! Выкладывайте все, что накопилось в телефоне!
     </h3>
     <div class="photo-editor__photo">
-      <img class="photo-editor__image" src="http://placehold.it/150x100" width="150" height="100" alt="">
+      <img class="photo-editor__image" src="./img/photo-road-mobile@1x.jpg" width="280" height="374" alt="">
       <input class="photo-editor__input visually-hidden" type="file" name="post-image">
     </div>
     <div class="photo-editor__tools">
       <div class="photo-editor__tools-wrapper">
         <label class="photo-editor__tools-label photo-editor__tools-label--current crop" for="crop">
         </label>
-        <input class="photo-editor__tools-input photo-editor__tools-input--current crop" type="radio" name="tools" value="crop" id="crop">
+        <input class="visually-hidden photo-editor__tools-input photo-editor__tools-input--current crop" type="radio" name="tools" value="crop" id="crop">
         <label class="photo-editor__tools-label exposure" for="exposure">
         </label>
-        <input class="photo-editor__tools--input exposure" type="radio" name="tools" value="exposure" id="exposure">
+        <input class="visually-hidden photo-editor__tools--input exposure" type="radio" name="tools" value="exposure" id="exposure">
         <label class="photo-editor__tools-label tint" for="tint">
         </label>
-        <input class="photo-editor__tools-input tint" type="radio" name="tools" value="tint" id="tint">
+        <input class="visually-hidden photo-editor__tools-input tint" type="radio" name="tools" value="tint" id="tint">
       </div>
       <div class="photo-editor__controls-wrapper">
         <div class="photo-editor__control-bar photo-editor__control-bar--current crop">
@@ -249,17 +255,17 @@
         </div>
       </div>
     </div>
-    <button class="photo-editor__submit submit" type="submit">
+    <button class="photo-editor__button photo-editor__submit submit" type="submit">
       Запостить
     </button>
-    <button class="photo-editor__reset reset" type="reset">
+    <button class="photo-editor__button photo-editor__reset reset" type="reset">
       Отмена
     </button>
   </form>
 </main>
 <footer class="page-footer">
   <a href="index.html" class="page-footer__logo">
-    <img src="http://placehold.it/150x100" width="150" height="100" alt="На главную">
+    <img src="./img/logo-pink-blue-mobile.svg" width="146" height="40" alt="На главную">
   </a>
   <section class="socials">
     <h3 class="visually-hidden">
@@ -268,15 +274,15 @@
     <div class="socials__wrapper">
       <ul class="socials__list">
         <li class="socials__item">
-          <a class="socials__link-twitter" href="#">
+          <a class="socials__link socials__link--twitter" href="#">
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link-facebook" href="#">
+          <a class="socials__link socials__link--facebook" href="#">
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link-youtube" href="#">
+          <a class="socials__link socials__link--youtube" href="#">
           </a>
         </li>
       </ul>
@@ -284,7 +290,7 @@
   </section>
   <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
     Разработано
-    <img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
+    <img src="./img/logo-htmlacademy.svg" width="26" height="34" alt="HTML Academy">
   </a>
 </footer>
 </body>

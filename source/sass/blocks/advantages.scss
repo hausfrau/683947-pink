@@ -1,0 +1,26 @@
+.advantages {
+  background-color: #ffffff;
+}
+
+.advantages__slogan {
+  font-weight: $light-font-weight;
+  font-size: $big-font-size;
+  text-align: center;
+}
+
+.advantages__wrapper {
+  padding-top: 50px;
+  background-color: $lightgray-background-color;
+  text-align: center;
+}
+
+.advantages__list {
+  @include reset-list;
+}
+
+.advantages__title {
+  @include resetTitle;
+  font-size: $middle-font-size;
+  font-weight: $bold-font-weight;
+  color: $black-color;
+}

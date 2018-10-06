@@ -1,0 +1,28 @@
+.socials__list {
+  @include reset-list;
+}
+
+.socials__link {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgba(40, 54, 69, 0.1);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.socials__link--twitter {
+  background-image: url("../../img/icon-twitter.svg");
+}
+
+.socials__link--facebook {
+  background-image: url("../../img/icon-facebook.svg");
+}
+
+.socials__link--youtube {
+  background-image: url("../../img/icon-youtube.svg");
+}

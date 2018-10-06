@@ -1,0 +1,69 @@
+.photo-editor {
+  background-color: $lightgray-background-color;
+}
+
+.photo-editor__slogan {
+  @include resetTitle;
+  line-height: 30px;
+  background-color: $white-color;
+}
+
+.photo-editor__tools-label {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+label.crop {
+  background-image: url("../../img/icon-editor-crop.svg");
+}
+
+label.exposure {
+  background-image: url("../../img/icon-editor-fill.svg");
+}
+
+label.tint {
+  widtht: 31.92px;
+  height: 31.92px;
+  background-image: url("../../img/icon-editor-contrast.svg");
+}
+
+.photo-editor__control-bar {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: $black-color;
+}
+
+.photo-editor__control-button {
+  @include reset-button;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: $crimson-color solid 2px;
+  border-radius: 50%;
+}
+
+.photo-editor__button {
+  @include reset-button;
+  width: 280px;
+  height: 55px;
+  font-size: $middle-font-size;
+  font-weight: $bold-font-weight;
+  line-height: 18px;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 55px;
+}
+
+.photo-editor__submit {
+  color: $crimson-color;
+  border-color: $crimson-color;
+}
+
+.photo-editor__reset {
+  color: rgba(40, 54, 69, 0.1);
+  border-color: rgba(40, 54, 69, 0.1);
+}

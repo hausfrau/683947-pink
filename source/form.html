@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
-  <h1>
+  <h1 class="page-header__title">
     Конкурс на самое безбашенное путешествие с Пинк
   </h1>
-  <a class="page-header__logo" href="#">
-    <img class="page-header__logo-img" src="http://placehold.it/150x100" width="150" height="100" alt="Пинк">
-  </a>
   <nav class="main-nav">
-    <button class="main-nav__button button" type="button">
-      Меню
-    </button>
+    <div class="main-nav__logo-wrapper">
+      <a class="main-nav__logo" href="#">
+        <img class="main-nav__logo-img" src="./img/logo-pink-white-mobile.svg" width="74" height="22" alt="Пинк">
+      </a>
+      <button class="main-nav__button button" type="button">
+        <span class="visually-hidden">
+          Меню
+        </span>
+      </button>
+    </div>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
@@ -63,43 +69,43 @@
       <input id="patronymic-name" class="competition-form__name competition-form__name--input" type="text" name="patronymic-name" value="" placeholder="Ну и отчество тоже">
     </div>
     <div class="competition-form__achievements">
-      <h2>
+      <h2 class="competition-form__title">
         Ваши безбашенные достижения в путешествии
       </h2>
       <div class="competition-form__achievements-wrapper">
         <ul class="competition-form__achievements-list">
           <li class="competition-form__achievements-item">
-            <input class="competition-form__achievements-checkbox" type="checkbox" name="achievements-shark-photo" value="shark-photo" id="shark-photo" checked>
+            <input class="competition-form__achievements-checkbox visually-hidden" type="checkbox" name="achievements-shark-photo" value="shark-photo" id="shark-photo" checked>
             <label class="competition-form__achievements-label" for="shark-photo">
               Сделал селфи с акулой
             </label>
           </li>
           <li class="competition-form__achievements-item">
-            <input class="competition-form__achievements-checkbox" type="checkbox" name="achievements-beach-burnt" value="beach-burnt" id="beach-burnt" checked>
+            <input class="competition-form__achievements-checkbox visually-hidden" type="checkbox" name="achievements-beach-burnt" value="beach-burnt" id="beach-burnt" checked>
             <label class="competition-form__achievements-label" for="beach-burnt">
               Обгорел на пляже
             </label>
           </li>
           <li class="competition-form__achievements-item">
-            <input class="competition-form__achievements-checkbox" type="checkbox" name="achievements-saw-norris" value="saw-norris" id="saw-norris">
-            <label class="competition-form__achievements-labelx" for="saw-norris">
+            <input class="competition-form__achievements-checkbox visually-hidden" type="checkbox" name="achievements-saw-norris" value="saw-norris" id="saw-norris">
+            <label class="competition-form__achievements-label" for="saw-norris">
               Видел Чака Норриса
             </label>
           </li>
           <li class="competition-form__achievements-item">
-            <input class="competition-form__achievements-checkbox" type="checkbox" name="achievements-bought-souvenirs" value="bought-souvenirs" id="bought-souvenirs">
+            <input class="competition-form__achievements-checkbox visually-hidden" type="checkbox" name="achievements-bought-souvenirs" value="bought-souvenirs" id="bought-souvenirs">
             <label class="competition-form__achievements-label" for="bought-souvenirs">
               Накупил сувениров
             </label>
           </li>
           <li class="competition-form__achievements-item">
-            <input class="competition-form__achievements-checkbox" type="checkbox" name="achievements-prop-tower" value="prop-tower" id="prop-tower" checked>
+            <input class="competition-form__achievements-checkbox visually-hidden" type="checkbox" name="achievements-prop-tower" value="prop-tower" id="prop-tower" checked>
             <label class="competition-form__achievements-label" for="prop-tower">
               Удержал башню
             </label>
           </li>
           <li class="competition-form__achievements-item">
-            <input class="competition-form__achievements-checkbox" type="checkbox" name="achievements-wreck-hotel" value="wreck-hotel" id="wreck-hotel">
+            <input class="competition-form__achievements-checkbox visually-hidden" type="checkbox" name="achievements-wreck-hotel" value="wreck-hotel" id="wreck-hotel">
             <label class="competition-form__achievements-label" for="wreck-hotel">
               Разгромил отель
             </label>
@@ -124,21 +130,29 @@
     </section>
     <section class="competition-form__apps">
       <div class="competition-form__apps-wrapper">
-        <h2>
+        <h2 class="competition-form__apps-title">
           С каким приложением путешествовали?
         </h2>
-        <input class="competition-form__apps-input" type="radio" name="apps-ios" value="ios" id="ios" checked>
-        <label class="competition-form__apps-label" for="ios">
-          Pink для iOS
-        </label>
-        <input class="competition-form__apps-input" type="radio" name="apps-android" value="android" id="android">
-        <label class="competition-form__apps-label" for="android">
-          Pink на Android
-        </label>
-        <input class="competition-form__apps-input" type="radio" name="apps-windows" value="windows" id="windows">
-        <label class="competition-form__apps-label" for="windows">
-          Windows Phone
-        </label>
+        <ul class="competition-form__apps-list">
+          <li class="competition-form__apps-item">
+            <input class="competition-form__apps-input visually-hidden" type="radio" name="apps" value="ios" id="ios" checked>
+            <label class="competition-form__apps-label" for="ios">
+              Pink для iOS
+            </label>
+          </li>
+          <li class="competition-form__apps-item">
+            <input class="competition-form__apps-input visually-hidden" type="radio" name="apps" value="android" id="android">
+            <label class="competition-form__apps-label" for="android">
+              Pink на Android
+            </label>
+          </li>
+          <li class="competition-form__apps-item">
+            <input class="competition-form__apps-input visually-hidden" type="radio" name="apps" value="windows" id="windows">
+            <label class="competition-form__apps-label" for="windows">
+              Windows Phone
+            </label>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="competition-form__feedback">
@@ -148,8 +162,7 @@
       <label class="competition-form__feedback-label" for="feedback">
         Опишите свои эмоции
       </label>
-      <textarea class="competition-form__feedback-content" name="feedback" id="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях">
-    </textarea>
+      <textarea class="competition-form__feedback-content" name="feedback" id="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
     </section>
     <button class="competition-form__submit" type="submit">
       Отправить форму
@@ -166,7 +179,7 @@
 </main>
 <footer class="page-footer">
   <a href="index.html" class="page-footer__logo">
-    <img src="http://placehold.it/150x100" width="150" height="100" alt="На главную">
+    <img src="./img/logo-pink-blue-mobile.svg" width="146" height="40" alt="На главную">
   </a>
   <section class="socials">
     <h3 class="visually-hidden">
@@ -175,15 +188,15 @@
     <div class="socials__wrapper">
       <ul class="socials__list">
         <li class="socials__item">
-          <a class="socials__link-twitter" href="#">
+          <a class="socials__link socials__link--twitter" href="#">
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link-facebook" href="#">
+          <a class="socials__link socials__link--facebook" href="#">
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link-youtube" href="#">
+          <a class="socials__link socials__link--youtube" href="#">
           </a>
         </li>
       </ul>
@@ -191,7 +204,7 @@
   </section>
   <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
     Разработано
-    <img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
+    <img src="./img/logo-htmlacademy.svg" width="26" height="34" alt="HTML Academy">
   </a>
 </footer>
 </body>

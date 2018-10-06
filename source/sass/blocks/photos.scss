@@ -1,0 +1,32 @@
+.photos__slogan {
+  @include resetTitle;
+  line-height: 30px;
+}
+
+.photos__list {
+  @include reset-list;
+}
+
+.photos__item {
+  background-color: $lightgray-background-color;
+}
+
+.photos__user-name {
+  font-weight: $bold-font-weight;
+}
+
+.photos__post-time {
+  font-size: $small-font-size;
+  font-weight: $light-font-weight;
+  text-transform: uppercase;
+}
+
+.photos__description {
+  margin: 0;
+}
+
+.photos__likes {
+  font-size: $small-font-size;
+  color: $crimson-color;
+  text-transform: uppercase;
+}

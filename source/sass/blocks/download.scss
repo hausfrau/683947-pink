@@ -1,0 +1,56 @@
+.download {
+  min-height: 273px;
+  padding: 20px 0;
+  background-color: #1d2631;
+  color: $white-color;
+  text-align: center;
+}
+
+.download__button {
+  display: inline-block;
+
+  @include reset-button;
+  margin: 27px 0;
+  padding: 12px 16px;
+  width: 281px;
+  height: 55px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: $white-color;
+  border-radius: 55px;
+  font-size: $upper-middle-font-size;
+  font-weight: $bold-font-weight;
+  line-height: 18px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.download__button:visited {
+  color: inherit;
+}
+
+.download__button:hover,
+.download__button:focus {
+  background-color: $white-color;
+  color: $crimson-color;
+}
+
+.download__button:active {
+  background-color: $white-color;
+  color: $basic-down-color;
+}
+
+.download__wrapper {
+  margin: 20px;
+}
+
+.download__link {
+  display: inline-block;
+  color: transparent;
+  margin-right: 20px;
+}
+
+.download__availability {
+  margin: 0;
+  font-weight: $light-font-weight;
+}
