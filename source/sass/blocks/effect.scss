@@ -1,0 +1,127 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $white-color;
+    margin-bottom: 99px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    background-color: $lightgray-background-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .effect__wrapper {
+    position: relative;
+    width: 310px;
+    min-height: 210px;
+    margin-right: 21px;
+    padding-top: 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -11px;
+      left: -308px;
+      background-image: url("../../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      width: 238px;
+      height: 276px;
+      background-size: 100%;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      width: 176px;
+      height: 176px;
+      line-height: 164px;
+      text-align: center;
+      border: solid 13px $crimson-color;
+      border-radius: 50%;
+      font-size: 96px;
+      color: $crimson-color;
+      font-weight: $bold-font-weight;
+      top: 44px;
+      left: -290px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__wrapper {
+    width: 522px;
+    min-height: 215px;
+    margin-top: 157px;
+    margin-left: 376px;
+
+    &::before {
+      top: -91px;
+      left: -364px;
+      width: 298px;
+      height: 345px;
+    }
+
+    &::after {
+      width: 219px;
+      height: 219px;
+      line-height: 219px;
+      font-size: 120px;
+      top: -19px;
+      left: -337px;
+    }
+  }
+}
+
+.effect__title {
+  font-size: 30px;
+  font-weight: $bold-font-weight;
+  color: $black-color;
+}
+
+@media (min-width: $tablet-width) {
+  .effect__title {
+    line-height: 36px;
+    width: 168px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.effect__text {
+  color: $basic-darker-color;
+}
+
+@media (min-width: $tablet-width) {
+  .effect__text {
+    margin: 0;
+    margin-right: 14px;
+    margin-bottom: 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__text {
+    font-size: $middle-font-size;
+    line-height: 30px;
+    margin-bottom: 31px;
+  }
+}
+
+.effect__link {
+  color: $crimson-color;
+}
+
+@media (min-width: $desktop-width) {
+  .effect__link {
+    font-size: $middle-font-size;
+    line-height: 30px;
+  }
+}

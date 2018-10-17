@@ -2,3 +2,15 @@
   width: 320px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .page-form {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form {
+    width: 960px;
+  }
+}

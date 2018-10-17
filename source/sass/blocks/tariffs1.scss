@@ -1,4 +1,4 @@
-.tariffs {
+.tariffs1 {
   position: relative;
   background-color: $lightgray-background-color;
   padding-top: 90px;
@@ -22,7 +22,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .tariffs {
+  .tariffs1 {
     display: flex;
     justify-content: flex-start;
     width: 660px;
@@ -32,7 +32,7 @@
 
 // @media (min-width: $desktop-width) {}
 
-.tariffs__titles-list {
+.tariffs1__titles-list {
   @include reset-list;
   // min-width: 276px;
   content: "";
@@ -44,7 +44,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .tariffs__titles-list {
+  .tariffs1__titles-list {
     position: static;
     align-self: flex-end;
     margin-bottom: 98px;
@@ -55,7 +55,7 @@
 
 // @media (min-width: $desktop-width) {}
 
-.tariffs__titles-header {
+.tariffs1__titles-header {
   background-color: red;
   padding: 17px 0 20px;
   text-align: center;
@@ -65,7 +65,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .tariffs__titles-header {
+  .tariffs1__titles-header {
     line-height: 30px;
     font-weight: 700;
     padding: 12px 5px 6px;
@@ -73,7 +73,7 @@
   }
 }
 
-.tariffs__titles-item {
+.tariffs1__titles-item {
   width: 190px;
   min-height: 29px;
   // padding: 24px 17px 20px 23px;
@@ -90,7 +90,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .tariffs__titles-item {
+  .tariffs1__titles-item {
     width: 153px;
     padding: 14px 16px;
     line-height: 30px;
@@ -102,13 +102,13 @@
 
 // @media (min-width: $desktop-width) {}
 
-.tariffs__wripper {
+.tariffs1__wripper {
   background-color: #f2f2f2;
   position: relative;
 }
 
 @media (min-width: $tablet-width) {
-  .tariffs__wripper {
+  .tariffs1__wripper {
     // width: 660px;
   }
 }

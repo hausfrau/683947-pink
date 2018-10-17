@@ -1,0 +1,32 @@
+.map {
+  position: relative;
+}
+
+.map__iframe {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  border: 0;
+}
+
+.map__image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 94px;
+    left: 142px;
+    width: 36px;
+    height: 36px;
+    background-image: url("../../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.map__image img {
+  margin-top: -445px;
+}

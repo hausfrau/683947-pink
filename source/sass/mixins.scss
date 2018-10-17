@@ -23,7 +23,7 @@
   box-sizing: border-box;
 }
 
-@mixin resetTitle {
+@mixin reset-title {
   margin: 0;
 
   @include basic-font;

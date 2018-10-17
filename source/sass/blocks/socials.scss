@@ -1,5 +1,33 @@
+.socials {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .socials {
+    margin-bottom: 0;
+    width: 196px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials {
+    width: 180px;
+    margin-left: 15px;
+    margin-bottom: 3px;
+  }
+}
+
 .socials__list {
   @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  width: 182px;
+}
+
+@media (min-width: $tablet-width) {
+  .socials__list {
+    width: 178px;
+  }
 }
 
 .socials__link {
