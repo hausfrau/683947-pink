@@ -10,13 +10,11 @@
 </head>
 <body>
 <header class="page-header page-header--form">
-  <h1 class="page-header__title">
-    Конкурс на самое безбашенное путешествие с Пинк
-  </h1>
-  <nav class="main-nav">
-    <div class="main-nav__logo-wrapper">
-      <a class="main-nav__logo" href="#">
-        <svg class="main-nav__logo-mobile" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+  <div class="page-header__wrapper">
+    <nav class="main-nav">
+      <div class="main-nav__logo-wrapper">
+        <a class="main-nav__logo" href="#">
+          <svg class="main-nav__logo-mobile" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
           <g>
             <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
             <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
@@ -62,9 +60,9 @@
             </g>
           </g>
         </svg>
-      </a>
-      <button class="main-nav__button  main-nav__button--open button-svg" type="button">
-        <svg class="button-svg__close" version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+        </a>
+        <button class="main-nav__button  main-nav__button--open button-svg" type="button">
+          <svg class="button-svg__close" version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
           <g id="miu">
             <g id="editor_list_view_hambuger_menu_glyph">
               <g>
@@ -79,99 +77,105 @@
         <svg class="button-svg__open" version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
           <path class="button-svg__fill" fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
         </svg>
-        <span class="visually-hidden">
+          <span class="visually-hidden">
           Меню
         </span>
-      </button>
-    </div>
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item site-list__item--active">
-        <a class="site-list__link site-list__link--index" href="index.html">
-          Главная
-        </a>
-      </li>
-      <li class="site-list__item">
-        <a class="site-list__link site-list__link--photo" href="photo.html">
-          Фотографии
-        </a>
-      </li>
-      <li class="site-list__item">
-        <a class="site-list__link site-list__link--form">
-          Конкурс
-        </a>
-      </li>
-      <li class="site-list__item">
-        <a class="site-list__link site-list__link--academy" href="https://htmlacademy.ru/intensive/adaptive">
-          HTML Academy
-        </a>
-      </li>
-    </ul>
-  </nav>
+        </button>
+      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link site-list__link--index" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--photo" href="photo.html">
+            Фотографии
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--form">
+            Конкурс
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--academy" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <h1 class="page-header__title">
+    Конкурс на самое безбашенное путешествие с Пинк
+  </h1>
 </header>
 <main class="page-form">
   <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
     <p class="competition-form__slogan">
-      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <b class="competition-form__slogan-hidden">Пожалуйста, заполните форму ниже:</b>
     </p>
-    <div class="competition-form__wrapper">
-      <div class="competition-form__name-wrapper">
-        <label for="last-name" class="competition-form__name competition-form__name--label">
-          Фамилия:
-        </label>
-        <input id="last-name" class="competition-form__name competition-form__name--input" type="text" name="last-name" value="" placeholder="Укажите фамилию *">
-        <label for="first-name" class="competition-form__name competition-form__name--label">
-          Имя:
-        </label>
-        <input id="first-name" class="competition-form__name competition-form__name--input" type="text" name="first-name" value="" placeholder="Введите ваше имя *">
-        <label for="patronymic-name" class="competition-form__name competition-form__name--label">
-          Отчество:
-        </label>
-        <input id="patronymic-name" class="competition-form__name competition-form__name--input" type="text" name="patronymic-name" value="" placeholder="Ну и отчество тоже">
-      </div>
-      <section class="competition-form__apps">
-        <fieldset class="competition-form__apps-fieldset">
-          <legend class="competition-form__apps-legend">
-            С каким приложением путешествовали?
-          </legend>
-          <div class="competition-form__apps-wrapper">
-            <ul class="competition-form__apps-list">
-              <li class="competition-form__apps-item">
-                <input class="competition-form__apps-input visually-hidden" type="radio" name="apps" value="ios" id="ios" checked>
-                <label class="competition-form__apps-label" for="ios">
-                  Pink для iOS
-                </label>
-              </li>
-              <li class="competition-form__apps-item">
-                <input class="competition-form__apps-input visually-hidden" type="radio" name="apps" value="android" id="android">
-                <label class="competition-form__apps-label" for="android">
-                  Pink на Android
-                </label>
-              </li>
-              <li class="competition-form__apps-item">
-                <input class="competition-form__apps-input visually-hidden" type="radio" name="apps" value="windows" id="windows">
-                <label class="competition-form__apps-label" for="windows">
-                  Windows Phone
-                </label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-      </section>
+    <div class="competition-form__name-wrapper">
+      <label for="last-name" class="competition-form__name competition-form__name--label">
+        Фамилия:
+      </label>
+      <input id="last-name" class="competition-form__name competition-form__name--input" type="text" name="last-name" value="" placeholder="Укажите фамилию *">
+      <label for="first-name" class="competition-form__name competition-form__name--label">
+        Имя:
+      </label>
+      <input id="first-name" class="competition-form__name competition-form__name--input" type="text" name="first-name" value="" placeholder="Введите ваше имя *">
+      <label for="patronymic-name" class="competition-form__name competition-form__name--label">
+        Отчество:
+      </label>
+      <input id="patronymic-name" class="competition-form__name competition-form__name--input" type="text" name="patronymic-name" value="" placeholder="Ну и отчество тоже">
     </div>
+    <section class="competition-form__apps">
+      <fieldset class="competition-form__apps-fieldset">
+        <legend class="competition-form__apps-legend">
+          С каким приложением путешествовали?
+        </legend>
+        <div class="competition-form__apps-wrapper">
+          <ul class="competition-form__apps-list">
+            <li class="competition-form__apps-item">
+              <input class="competition-form__apps-input visually-hidden" type="radio" name="apps" value="ios" id="ios" checked>
+              <label class="competition-form__apps-label" for="ios">
+                Pink для iOS
+              </label>
+            </li>
+            <li class="competition-form__apps-item">
+              <input class="competition-form__apps-input visually-hidden" type="radio" name="apps" value="android" id="android">
+              <label class="competition-form__apps-label" for="android">
+                Pink на Android
+              </label>
+            </li>
+            <li class="competition-form__apps-item">
+              <input class="competition-form__apps-input visually-hidden" type="radio" name="apps" value="windows" id="windows">
+              <label class="competition-form__apps-label" for="windows">
+                Windows Phone
+              </label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+    </section>
     <section class="competition-form__contacts">
-      <fieldset>
+      <fieldset class="competition-form__contacts-fieldset">
         <legend class="competition-form__contacts-legend">
           Контактная информация
         </legend>
         <div class="competition-form__contacts-wrapper">
-          <label for="phone" class="competition-form__contacts-label">
-            Номер телефона
-          </label>
-          <input id="phone" class="competition-form__contacts-input" type="text" name="phone" value="" placeholder="Номер, пожалуйста">
-          <label for="email" class="competition-form__contacts-label">
-            Адрес почты
-          </label>
-          <input id="email" class="competition-form__contacts-input" type="text" name="email" value="" placeholder="Введите почту *">
+          <div class="competition-form__phone-wrapper">
+            <label for="phone" class="competition-form__contacts-label competition-form__contacts-label--phone">
+              Номер телефона
+            </label>
+            <input id="phone" class="competition-form__contacts-input competition-form__contacts-input--phone" type="text" name="phone" value="" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="competition-form__email-wrapper">
+            <label for="email" class="competition-form__contacts-label competition-form__contacts-label--email">
+              Адрес почты
+            </label>
+            <input id="email" class="competition-form__contacts-input competition-form__contacts-input--email" type="text" name="email" value="" placeholder="Введите почту *">
+          </div>
         </div>
       </fieldset>
     </section>
@@ -179,7 +183,7 @@
       <!--<h2 class="competition-form__title">
         Ваши безбашенные достижения в путешествии
       </h2>-->
-      <fieldset>
+      <fieldset class="competition-form__achievements-fieldset">
         <legend class="competition-form__title">
           Ваши безбашенные достижения в путешествии
         </legend>
@@ -226,7 +230,7 @@
       </fieldset>
     </div>
     <section class="competition-form__feedback">
-      <fieldset>
+      <fieldset class="competition-form__feedback-fieldset">
         <legend class="competition-form__feedback-legend">
           Опишите свои эмоции
         </legend>
@@ -236,20 +240,22 @@
         <textarea class="competition-form__feedback-content" name="feedback" id="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
     </section>
-    <button class="competition-form__submit" type="submit">
-      Отправить форму
-    </button>
-    <p class="competition-form__note">
+    <div class="competition-form__footer">
+      <button class="competition-form__submit" type="submit">
+        Отправить форму
+      </button>
+      <p class="competition-form__note">
       <span class="competition-form__note-symbol">
         *
       </span>
-      <span class="competition-form__note-content">
+        <span class="competition-form__note-content">
         — обязательные поля
       </span>
-    </p>
+      </p>
+    </div>
   </form>
 </main>
-<footer class="page-footer">
+<footer class="page-footer page-footer--form">
   <div class="page-footer__wrapper">
     <a href="index.html" class="page-footer__logo">
       <img src="./img/logo-pink-blue-mobile.svg" width="146" height="40" alt="На главную">
@@ -258,20 +264,20 @@
       <h3 class="visually-hidden">
         Социальные сети
       </h3>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link socials__link--twitter" href="#">
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="#">
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--youtube" href="#">
-            </a>
-          </li>
-        </ul>
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__link socials__link--twitter" href="#">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--facebook" href="#">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="#">
+          </a>
+        </li>
+      </ul>
     </section>
     <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
       Разработано

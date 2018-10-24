@@ -1,14 +1,14 @@
 var menuButton = document.querySelector(".main-nav__button");
-var menuWrapper = document.querySelector(".main-nav__wrapper");
+// var menuWrapper = document.querySelector(".main-nav__wrapper");
 var mainNav = document.querySelector(".main-nav");
 
 menuButton.addEventListener("click", function () {
   console.log("menuButton clicked") ;
 });
 
-menuWrapper.addEventListener("click", function () {
+/* menuWrapper.addEventListener("click", function () {
   console.log("menuWrapper clicked");
-});
+});*/
 
 mainNav.addEventListener("click", function (evt) {
 

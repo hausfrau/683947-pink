@@ -40,6 +40,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .slider__user-name {
+    font-size: $big-font-size;
+  }
+}
+
 .slider__user-status {
   display: none;
 }
@@ -54,6 +60,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .slider__user-status {
+    font-size: $middle-font-size;
+  }
+}
+
 .slider__content {
   line-height: 30px;
   margin-bottom: 35px;
@@ -65,10 +77,24 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .slider__content {
+    width: 730px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+}
+
 .slider__toggle {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: $desktop-width) {
+  .slider__toggle {
+    display: none;
+  }
 }
 
 .slider__button {

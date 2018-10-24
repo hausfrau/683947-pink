@@ -1,5 +1,4 @@
 .main-nav {
-  // z-index: 1;
   width: 320px;
   margin: 0 auto;
   margin-bottom: -67px;
@@ -12,28 +11,64 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 258px;
+    height: 286px;
+    bottom: -395px;
+    left: 0;
+    background-image: url("../../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.page-header--photo .main-nav::after {
+  content: none;
+}
+
+.page-header--form .main-nav::after {
+  content: none;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: auto;
+    width: 660px;
     min-height: 361px;
-    margin: 0;
-    // flex-direction: column;
+    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.3);
+
+    &::after {
+      left: -20px;
+      bottom: -618px;
+      width: 700px;
+      height: 545px;
+      background-image: url("../../img/iphone-hand-tablet@1x.png");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    min-height: 110px;
+    width: 960px;
+    margin: 0 auto;
+    min-height: 111px;
     flex-direction: row;
     justify-content: space-between;
-    // padding: 0 10px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0);
     line-height: 18px;
     font-weight: $basic-font-weight;
     text-transform: none;
+
+    &::after {
+      top: 210px;
+      left: 26px;
+      width: 1050px;
+      height: 645px;
+      background-image: url("../../img/iphone-hand-desktop@1x.png");
+    }
   }
 }
 
@@ -44,8 +79,8 @@
   width: 320px;
   height: 69px;
   padding: 18px 6px 21px 19px;
-  // background-color: rgba(0, 0, 0, 0.3);
-  // padding: 20px;
+  background-color: #283645;
+  border-bottom: solid 1px #000000;
   box-sizing: border-box;
 }
 
@@ -53,17 +88,19 @@
   .main-nav__logo-wrapper {
     width: 660px;
     height: 110px;
-    background: transparent;
     padding-top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__logo-wrapper {
-    width: 960px;
+    width: 158px;
     height: 110px;
-    background: transparent;
-    padding: 27px 11px;
+    padding: 0;
+    margin-top: -14px;
+    margin-left: 10px;
+    background-color: transparent;
+    border-bottom: none;
   }
 }
 
@@ -71,10 +108,6 @@
   display: block;
   margin: 0;
   padding: 0;
-  // width: 210px;
-  // height: 22px;
-  // text-align: center;
-  // text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -141,8 +174,6 @@
 
 .main-nav__button {
   @include reset-button;
-  // height: 24px;
-  // background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
@@ -159,8 +190,6 @@
 
 .main-nav__button--close {
   width: 24px;
-  // background-image: url("../../img/icon-menu-cross.svg");
-  // background-repeat: no-repeat;
 }
 
 .main-nav__button--close .button-svg__open {
@@ -169,7 +198,6 @@
 
 .main-nav__button--open {
   width: 50px;
-  // background-image: url("../../img/icon-menu-burger.svg");
 }
 
 .main-nav__button--open .button-svg__close {
@@ -178,12 +206,8 @@
 
 .main-nav__button:hover .button-svg__fill {
   fill: $crimson-color;
-  // background-image: url("../../img/icon-menu-burger-hover.svg");
-  // background-repeat: no-repeat;
 }
 
 .main-nav__button:active .button-svg__fill {
   fill: rgba(210, 40, 86, 0.3);
-  // background-image: url("../../img/icon-menu-burger-hover.svg");
-  //  background-repeat: no-repeat;.competition-form__apps-fieldset
 }

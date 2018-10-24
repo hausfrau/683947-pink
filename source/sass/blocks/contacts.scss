@@ -2,19 +2,82 @@
   margin-bottom: 40px;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 960px;
+  }
+}
+
 .contacts__list {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__list {
+    align-items: baseline;
+  }
 }
 
 .contacts__item {
   margin-bottom: 22px;
-  // padding-left: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__item {
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .contacts__item {
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 280px;
+
+    &:nth-child(2) {
+      order: 2;
+    }
+  }
 }
 
 .contacts__text {
   font-size: $middle-font-size;
   font-weight: $bold-font-weight;
   display: block;
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__text {
+    margin-bottom: 22px;
+  }
 }
 
 .contacts__phone,
@@ -27,4 +90,5 @@
   margin-top: 2px;
   padding: 0 11px;
   line-height: 29px;
+  text-align: center;
 }

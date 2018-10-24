@@ -1,16 +1,16 @@
 .tariffs {
   position: relative;
+  width: 100%;
   background-color: $lightgray-background-color;
   padding-top: 90px;
-  // display: flex;
-  //justify-content: flex-start;
+  padding-bottom: 100px;
   overflow: hidden;
   margin-bottom: 43px;
   margin-top: -21px;
   padding-left: 22px;
 
   &::before {
-    content: "";
+    // content: "";
     position: absolute;
     width: 1200px;
     height: 95px;
@@ -23,94 +23,325 @@
 
 @media (min-width: $tablet-width) {
   .tariffs {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: flex-start;
-    width: 660px;
-    padding-left: 23px;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    margin-bottom: 47px;
   }
 }
 
-// @media (min-width: $desktop-width) {}
-
-.tariffs__titles-list {
-  @include reset-list;
-  // min-width: 276px;
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 188px;
-  left: 21px;
-  // justify-self: flex-end;
-}
-
-@media (min-width: $tablet-width) {
-  .tariffs__titles-list {
-    position: static;
-    align-self: flex-end;
-    margin-bottom: 98px;
-    // width: 153px;
-    line-height: 30px;
+@media (min-width: $desktop-width) {
+  .tariffs {
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 139px;
+    padding-bottom: 68px;
+    justify-content: center;
   }
 }
 
-// @media (min-width: $desktop-width) {}
-
-.tariffs__titles-header {
-  background-color: red;
-  padding: 17px 0 20px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  // display: none;
-}
-
-@media (min-width: $tablet-width) {
-  .tariffs__titles-header {
-    line-height: 30px;
-    font-weight: 700;
-    padding: 12px 5px 6px;
-    // display: none;
-  }
-}
-
-.tariffs__titles-item {
-  width: 190px;
-  min-height: 29px;
-  // padding: 24px 17px 20px 23px;
-  padding: 15px 20px;
-  padding-right: 0;
-  line-height: 27px;
-  text-transform: uppercase;
-  background-color: $white-color;
-  border-style: solid;
-  border-color: $basic-border-color;
-  border-width: 2px;
-  border-top-style: none;
-  border-right-style: none;
-}
-
-@media (min-width: $tablet-width) {
-  .tariffs__titles-item {
-    width: 153px;
-    padding: 14px 16px;
-    line-height: 30px;
-    text-transform: none;
-    box-sizing: border-box;
-    min-height: 45px;
-  }
-}
-
-// @media (min-width: $desktop-width) {}
-
-.tariffs__wripper {
+.tariffs__wrapper {
   background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 32px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__wrapper {
+    width: 660px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs__wrapper {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.tariffs__list {
+  width: auto;
+
+  border-collapse: collapse;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__list {
+    margin: 0 20px;
+  }
+}
+
+.tariffs__list tr {
+  display: flex;
+}
+
+.tariffs__title {
+  min-height: 59px;
+  box-sizing: border-box;
+  flex-basis: 276px;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__title {
+    text-align: left;
+    background-color: $white-color;
+    border-style: solid;
+    border-color: $basic-border-color;
+    border-width: 2px;
+    border-top-style: none;
+    border-right-style: none;
+    text-transform: none;
+    min-height: 45px;
+    font-size: $basic-font-size;
+    font-weight: $basic-font-weight;
+    padding: 15px 0;
+    padding-left: 15px;
+    padding-right: 21px;
+    flex-basis: 152px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs__title {
+    font-size: $middle-font-size;
+    font-weight: $basic-font-weight;
+    min-height: 59px;
+    padding: 34px 68px;
+    flex-basis: 233px;
+  }
+}
+
+.tariffs__title-header {
+  color: transparent;
+  border: none;
+  background: transparent;
+  border-bottom: solid 2px $basic-border-color;
+  box-sizing: border-box;
+  flex-basis: 276px;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__title-header {
+    flex-basis: 152px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs__title-header {
+    flex-basis: 233px;
+  }
+}
+
+.tariffs__header--hit {
   position: relative;
 }
 
+.tariffs__header--hit::before {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 73px;
+  background-image: url("../../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  left: 0;
+}
+
+.tariffs__header--hit::after {
+  content: "Хит";
+  color: $white-color;
+  font-size: $basic-font-size;
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 12px;
+  left: 10px;
+  text-transform: uppercase;
+}
+
+.tariffs__header {
+  text-align: center;
+  color: $white-color;
+  background-color: $basic-darker-color;
+  text-transform: uppercase;
+  border-right: solid 2px $basic-border-color;
+  min-height: 94px;
+  box-sizing: border-box;
+  flex-basis: 276px;
+}
+
 @media (min-width: $tablet-width) {
-  .tariffs__wripper {
-    // width: 660px;
+  .tariffs__header {
+    line-height: 30px;
+    font-weight: $bold-font-weight;
+    min-height: 75px;
+    padding: 7px 8px;
+    flex-basis: 152px;
   }
 }
 
-// @media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .tariffs__header {
+    width: 233px;
+    min-height: 94px;
+    padding: 7px 8px;
+    flex-basis: 233px;
+  }
+}
+
+.tariffs__name {
+  margin: 0;
+  font-size: $middle-font-size;
+  font-weight: $bold-font-weight;
+  line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__name {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-left: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs__name {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+}
+
+.tariffs__price {
+  font-size: $big-font-size;
+  font-weight: $light-font-weight;
+  line-height: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__price {
+    font-size: $middle-font-size;
+    font-weight: $light-font-weight;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs__price {
+    font-size: $big-font-size;
+  }
+}
+
+.tariffs__facilities-item {
+  min-width: 276px;
+  border-left: solid 2px $basic-border-color;
+  position: relative;
+  min-height: 61px;
+  padding: 24px 17px 20px 23px;
+  box-sizing: border-box;
+  background-color: $white-color;
+  border-bottom: solid 2px $basic-border-color;
+  text-transform: uppercase;
+  flex-basis: 276px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 14px;
+    right: 20px;
+    background-image: url("../../img/icon-no-orange.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__facilities-item {
+    min-width: 152px;
+    flex-basis: 152px;
+    min-height: 75px;
+    padding: 0;
+    color: transparent;
+
+    &::after {
+      right: 62px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs__facilities-item {
+    color: transparent;
+    flex-basis: 233px;
+
+    &::after {
+      top: 18px;
+      right: 100px;
+    }
+  }
+}
+
+.tariffs__facilities-item--included::after {
+  content: "";
+  position: absolute;
+  width: 31px;
+  height: 29px;
+  top: 12px;
+  right: 59px;
+  background-size: 100%;
+  background-image: url("../../img/icon-yes-green.svg");
+  background-repeat: no-repeat;
+}
+
+.tariffs__toggles {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98px;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__toggles {
+    display: none;
+  }
+}
+
+.tariffs__button {
+  @include reset-button;
+  width: 6px;
+  height: 6px;
+  border-color: rgba(40, 54, 69, 0.3);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__button {
+    display: none;
+  }
+}
+
+.tariffs__button:not(:last-child) {
+  margin-right: 18px;
+}
+
+.tariffs__button--current {
+  width: 12px;
+  height: 12px;
+  border-color: $basic-darker-color;
+}

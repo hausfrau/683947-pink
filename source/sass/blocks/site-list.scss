@@ -10,18 +10,18 @@
 @media (min-width: $tablet-width) {
   .site-list {
     width: 660px;
-    background-color: transparent;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 621px;
+    width: 622px;
     margin-right: 10px;
     min-height: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: transparent;
   }
 }
 
