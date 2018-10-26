@@ -1,0 +1,163 @@
+.effect {
+  margin-top: -1px;
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white-color;
+    margin-bottom: 74px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    background-color: $lightgray-background-color;
+    margin-bottom: 99px;
+  }
+}
+
+.effect__wrapper {
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .effect__wrapper {
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__wrapper {
+    width: 940px;
+    padding-top: 21px;
+    padding-bottom: 67px;
+  }
+}
+
+.effect__icon-timer {
+  position: relative;
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  width: 238px;
+  height: 276px;
+  background-size: 100%;
+  margin-right: 71px;
+}
+
+@media (min-width: $desktop-width) {
+  .effect__icon-timer {
+    width: 298px;
+    height: 345px;
+    margin-right: 69px;
+  }
+}
+
+.effect__time {
+  position: absolute;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 13px $crimson-color;
+  border-radius: 50%;
+  font-size: 96px;
+  color: $crimson-color;
+  font-weight: $bold-font-weight;
+  width: 200px;
+  height: 200px;
+  top: 56px;
+  padding-bottom: 10px;
+  left: 19px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $desktop-width) {
+  .effect__time {
+    width: 250px;
+    height: 250px;
+    border-width: 15px;
+    font-size: 120px;
+    top: 72px;
+    left: 25px;
+    padding-bottom: 10px;
+  }
+}
+
+.effect__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 36px;
+}
+
+@media (min-width: $desktop-width) {
+  .effect__text-wrapper {
+    padding-top: 0;
+  }
+}
+
+.effect__title {
+  font-size: 30px;
+  font-weight: $bold-font-weight;
+  color: $black-color;
+}
+
+@media (min-width: $tablet-width) {
+  .effect__title {
+    line-height: 36px;
+    width: 168px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__title {
+    width: 540px;
+    margin-top: 92px;
+    margin-bottom: 20px;
+  }
+}
+
+.effect__text {
+  color: $basic-darker-color;
+}
+
+@media (min-width: $tablet-width) {
+  .effect__text {
+    margin: 0;
+    margin-bottom: 11px;
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__text {
+    font-size: $middle-font-size;
+    line-height: 30px;
+    margin-right: 0;
+    margin-bottom: 32px;
+    width: 522px;
+  }
+}
+
+.effect__link {
+  color: $crimson-color;
+}
+
+@media (min-width: $desktop-width) {
+  .effect__link {
+    font-size: $middle-font-size;
+    line-height: 30px;
+  }
+}

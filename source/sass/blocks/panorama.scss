@@ -1,0 +1,190 @@
+.panorama {
+  padding: 0;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &::after {
+    position: absolute;
+    display: inline-block;
+    z-index: 100;
+    content: "Панорама дня";
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: $bold-font-weight;
+    color: $white-color;
+    width: 140px;
+    height: 36px;
+    top: 0;
+    right: 19px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $crimson-color;
+    padding-top: 6px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .panorama::after {
+    top: 57px;
+    right: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama {
+    margin-bottom: 50px;
+
+    &::after {
+      top: 54px;
+      right: 296px;
+    }
+  }
+}
+
+.panorama__image {
+  width: 100%;
+  height: 137px;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__image {
+    height: 509px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama__image {
+    height: 506px;
+  }
+}
+
+.panorama__text-wrapper {
+  background-color: $lightgray-background-color;
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  padding: 18px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 154px;
+    right: 248px;
+    background-image: url("../img/icon-heart-crimson.svg");
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__text-wrapper {
+    padding: 24px 29px;
+    width: 620px;
+
+    &::after {
+      content: "";
+      top: 30px;
+      right: 28px;
+      background-image: url("../img/icon-heart-crimson.svg");
+      background-repeat: no-repeat;
+      width: 13px;
+      height: 12px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama__text-wrapper {
+    width: 940px;
+    padding: 24px 27px;
+
+    &::after {
+      top: 30px;
+      right: 32px;
+    }
+  }
+}
+
+.panorama__user {
+  margin: 0;
+  padding: 0;
+}
+
+.panorama__user-name {
+  font-weight: $bold-font-weight;
+}
+
+.panorama__post-time {
+  font-size: $small-font-size;
+  font-weight: $light-font-weight;
+  text-transform: uppercase;
+}
+
+.panorama__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__description {
+    box-sizing: border-box;
+    width: 595px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama__description {
+    line-height: 23px;
+    width: 920px;
+  }
+}
+
+.panorama__likes {
+  position: relative;
+  margin: 0;
+  font-size: $small-font-size;
+  color: $crimson-color;
+  padding: 0 18px;
+  padding-left: 32px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__likes {
+    padding-left: 27px;
+    margin-top: auto;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama__likes {
+    top: 25px;
+    right: 44px;
+  }
+}
+
+.panorama__likes-text {
+  margin-top: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__likes-text {
+    margin-top: 0;
+  }
+}

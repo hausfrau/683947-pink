@@ -1,0 +1,76 @@
+.map {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    margin-bottom: 21px;
+  }
+}
+
+.map__iframe {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: 0;
+  left: 0;
+  border: 0;
+}
+
+.map__image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &::before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: 94px;
+    left: 142px;
+    width: 36px;
+    height: 36px;
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map__image {
+    background: none;
+    height: 375px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__image {
+    background: none;
+    height: 486px;
+  }
+}
+
+.map__image img {
+  margin-top: -445px;
+}
+
+@media (min-width: $tablet-width) {
+  .map__image img {
+    width: 700px;
+    height: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__image img {
+    width: 1200px;
+    height: auto;
+  }
+}

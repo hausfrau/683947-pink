@@ -1,14 +1,128 @@
+.photos {
+  width: auto;
+  margin-bottom: 43px;
+}
+
+@media (min-width: $tablet-width) {
+  .photos {
+    margin-bottom: 44px;
+  }
+}
+
 .photos__slogan {
-  @include resetTitle;
+  @include reset-title;
   line-height: 30px;
+  text-align: center;
+  width: 253px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-bottom: 49px;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__slogan {
+    font-size: $middle-font-size;
+    line-height: 30px;
+    width: 470px;
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__slogan {
+    width: 595px;
+    margin-bottom: 88px;
+  }
+}
+
+.photos__wrapper {
+  padding: 0 20px;
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__wrapper {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__wrapper {
+    padding: 0 10px;
+    width: 960px;
+  }
 }
 
 .photos__list {
   @include reset-list;
 }
 
+@media (min-width: $tablet-width) {
+  .photos__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 .photos__item {
   background-color: $lightgray-background-color;
+  padding: 0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 22px;
+    min-height: 455px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__item {
+    padding-bottom: 22px;
+    margin-bottom: 55px;
+    min-height: 555px;
+  }
+}
+
+.photos__image {
+  width: 280px;
+  height: 180px;
+  margin-bottom: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__image {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__image {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.photos__user {
+  margin: 0;
+  padding: 0 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__user {
+    padding: 0 28px;
+  }
 }
 
 .photos__user-name {
@@ -23,10 +137,64 @@
 
 .photos__description {
   margin: 0;
+  margin-bottom: 9px;
+  padding: 0 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__description {
+    padding: 0 28px;
+    width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__description {
+    line-height: 23px;
+    margin-bottom: 14px;
+  }
 }
 
 .photos__likes {
+  position: relative;
+  margin: 0;
   font-size: $small-font-size;
   color: $crimson-color;
+  padding: 0 18px;
+  padding-left: 49px;
   text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 18px;
+    background-image: url("../img/icon-heart-crimson.svg");
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photos__likes {
+    padding-left: 27px;
+    margin-top: auto;
+
+    &::before {
+      left: 255px;
+    }
+  }
+}
+
+.photos__likes-text {
+  margin-top: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__likes-text {
+    margin-top: 0;
+  }
 }

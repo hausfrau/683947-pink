@@ -23,7 +23,7 @@
   box-sizing: border-box;
 }
 
-@mixin resetTitle {
+@mixin reset-title {
   margin: 0;
 
   @include basic-font;
@@ -52,4 +52,23 @@
 @mixin input-icon-active {
   @include input-icon;
   border-color: $crimson-color;
+}
+
+@mixin form-border {
+  border-style: solid;
+  border-width: 2px;
+  border-color: $basic-border-color;
+}
+
+@mixin contacts-icon {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: -72px;
+  left: 439px;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-color: $basic-border-color;
+  background-position: center;
 }

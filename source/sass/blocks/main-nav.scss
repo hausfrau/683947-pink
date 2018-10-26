@@ -1,58 +1,214 @@
 .main-nav {
   width: 320px;
-  margin-bottom: -69px;
+  margin: 0 auto;
+  margin-bottom: -67px;
+  padding: 0;
   background-color: #283645;
   font-size: $middle-font-size;
   font-weight: $bold-font-weight;
   line-height: 32px;
   text-transform: uppercase;
+  min-height: 321px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 258px;
+    height: 286px;
+    bottom: -395px;
+    left: 0;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.page-header--photo .main-nav::after {
+  content: none;
+}
+
+.page-header--form .main-nav::after {
+  content: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 660px;
+    min-height: 361px;
+    // margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    &::after {
+      left: -20px;
+      bottom: -618px;
+      width: 700px;
+      height: 545px;
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 960px;
+    // margin: 0 auto;
+    min-height: 111px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0);
+    line-height: 18px;
+    font-weight: $basic-font-weight;
+    text-transform: none;
+
+    &::after {
+      top: 210px;
+      left: 26px;
+      width: 1050px;
+      height: 645px;
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+    }
+  }
 }
 
 .main-nav__logo-wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 20px;
+  align-items: center;
+  width: 320px;
+  height: 69px;
+  padding: 18px 6px 21px 19px;
+  background-color: #283645;
+  border-bottom: solid 1px #000000;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__logo-wrapper {
+    width: 660px;
+    height: 110px;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo-wrapper {
+    width: 158px;
+    height: 110px;
+    padding: 0;
+    margin-top: -14px;
+    margin-left: 10px;
+    background-color: transparent;
+    border-bottom: none;
+  }
 }
 
 .main-nav__logo {
+  display: block;
   margin: 0;
-  color: transparent;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__logo {
+    width: 146px;
+    height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo {
+    width: 146px;
+    height: 40px;
+  }
+}
+
+.main-nav__logo-mobile {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__logo-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo-mobile {
+    display: none;
+  }
+}
+
+.main-nav__logo-tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__logo-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo-tablet {
+    display: none;
+  }
+}
+
+.main-nav__logo-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__logo-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo-desktop {
+    display: block;
+  }
 }
 
 .main-nav__button {
   @include reset-button;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__button {
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__button {
+    display: none;
+  }
+}
+
+.main-nav__button--close {
+  width: 24px;
+}
+
+.main-nav__button--close .button-svg__open {
+  display: none;
+}
+
+.main-nav__button--open {
   width: 50px;
-  height: 24px;
-  background-image: url("../../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
 }
 
-.main-nav__wrapper {
-  display: block;
+.main-nav__button--open .button-svg__close {
+  display: none;
 }
 
-.main-nav__button:hover {
-  background-image: url("../../img/icon-menu-burger-hover.svg");
-  background-repeat: no-repeat;
+.main-nav__button:hover .button-svg__fill {
+  fill: $crimson-color;
 }
 
-.main-nav__logo-wrapper:active + .main-nav__wrapper {
-  display: block;
-}
-
-.main-nav__background {
-  min-height: 462px;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-}
-
-.main-nav__background::after {
-  content: "";
-  position: absolute;
-  width: 258px;
-  height: 286px;
-  bottom: 0;
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
+.main-nav__button:active .button-svg__fill {
+  fill: rgba(210, 40, 86, 0.3);
 }
