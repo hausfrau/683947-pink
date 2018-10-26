@@ -16,10 +16,10 @@
   .competition-form {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0;
+    // padding: 0 10px;
     box-sizing: border-box;
-    margin: 0 auto;
-    width: 960px;
+    // margin: 0 auto;
+    // width: 960px;
   }
 }
 
@@ -250,6 +250,17 @@
   margin-bottom: 52px;
 }
 
+@media (min-width: $desktop-width) {
+  .competition-form__achievements-item {
+    width: 260px;
+    margin-right: 55px;
+  }
+
+  .competition-form__achievements-item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
 .competition-form__achievements-label {
   position: relative;
   padding-left: 70px;
@@ -274,21 +285,21 @@
 
 .competition-form__achievements-checkbox:active + .competition-form__achievements-label::before {
   @include input-icon-active;
-  background-image: url("../../img/icon-yes.svg");
+  background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .competition-form__achievements-checkbox:checked + .competition-form__achievements-label::before {
   @include input-icon;
-  background-image: url("../../img/icon-yes.svg");
+  background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .competition-form__achievements-checkbox:checked:hover + .competition-form__achievements-label::before {
   @include input-icon-hover;
-  background-image: url("../../img/icon-yes.svg");
+  background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -317,6 +328,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 34px;
+    box-sizing: border-box;
   }
 }
 
@@ -450,7 +462,7 @@
 
   .competition-form__contacts-label--phone::after {
     @include contacts-icon;
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
   }
 
   .competition-form__contacts-input--email {
@@ -464,7 +476,7 @@
 
   .competition-form__contacts-label--email::after {
     @include contacts-icon;
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
   }
 }
 
@@ -597,7 +609,7 @@
 .competition-form__apps-input:active + .competition-form__apps-label::before {
   @include input-icon-active;
   border-radius: 35px;
-  background-image: url("../../img/icon-map-marker.svg");
+  background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -605,7 +617,7 @@
 .competition-form__apps-input:checked + .competition-form__apps-label::before {
   @include input-icon;
   border-radius: 35px;
-  background-image: url("../../img/icon-map-marker.svg");
+  background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -613,7 +625,7 @@
 .competition-form__apps-input:checked:hover + .competition-form__apps-label::before {
   @include input-icon-hover;
   border-radius: 35px;
-  background-image: url("../../img/icon-map-marker.svg");
+  background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

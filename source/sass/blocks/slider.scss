@@ -69,17 +69,20 @@
 .slider__content {
   line-height: 30px;
   margin-bottom: 35px;
+  width: 280px;
 }
 
 @media (min-width: $tablet-width) {
   .slider__content {
     font-size: $middle-font-size;
+    width: 620px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__content {
-    width: 730px;
+    // width: 730px;
+    width: 705px;
     margin: 0 auto;
     margin-bottom: 36px;
   }

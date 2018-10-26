@@ -1,13 +1,17 @@
 .feedbacks {
+  margin: 0 auto;
   margin-top: -43px;
   margin-bottom: 40px;
   padding-top: 50px;
   text-align: center;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: $desktop-width) {
   .feedbacks {
-    margin: 0;
     padding: 0;
     padding-top: 87px;
     margin-bottom: 30px;
