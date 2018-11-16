@@ -1,16 +1,28 @@
+.slider {
+  width: 100%;
+  box-sizing: border-box;
+  position: static;
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    position: relative;
+  }
+}
+
 .slider__list {
   @include reset-list;
 }
 
 .slider__item {
-  padding: 0 21px;
+  padding: 0 1px;
 }
 
-@media (min-width: $tablet-width) {
+/* @media (min-width: $tablet-width) {
   .slider__item {
     padding: 0 20px;
   }
-}
+}*/
 
 .slider__item-wrapper {
   margin: 0;
@@ -24,12 +36,14 @@
 }
 
 .slider__user-name {
+  display: block;
   font-style: normal;
   margin: 0;
   font-size: $middle-font-size;
   font-weight: $bold-font-weight;
   line-height: 30px;
   color: $black-color;
+  margin-bottom: 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -67,13 +81,22 @@
 }
 
 .slider__content {
+  position: static;
   line-height: 30px;
-  margin-bottom: 35px;
+  margin: 0;
+  // margin-top: 13px;
+  margin-bottom: 32px;
   width: 280px;
+
+  &::after {
+    content: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .slider__content {
+    margin: 0 auto;
+    margin-bottom: 35px;
     font-size: $middle-font-size;
     width: 620px;
   }
@@ -81,10 +104,25 @@
 
 @media (min-width: $desktop-width) {
   .slider__content {
+    position: relative;
     // width: 730px;
     width: 705px;
-    margin: 0 auto;
+    // margin: 0 auto;
     margin-bottom: 36px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      // left: 311px;
+      top: -81px;
+      width: 81px;
+      // left: calc(50% - 39px);
+      height: 65px;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -118,4 +156,26 @@
   width: 12px;
   height: 12px;
   border-color: $basic-darker-color;
+}
+
+@media (min-width: $desktop-width) {
+  .slider__previous-slide {
+    position: absolute;
+    width: 22px;
+    height: 42px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    top: 27px;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  .slider__next-slide {
+    position: absolute;
+    width: 22px;
+    height: 42px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    top: 27px;
+    right: 0;
+    background-repeat: no-repeat;
+  }
 }

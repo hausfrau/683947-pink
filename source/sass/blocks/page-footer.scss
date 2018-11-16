@@ -2,12 +2,24 @@
   width: 100%;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 46px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding-top: 65px;
+    padding-top: 64px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    // flex-wrap: wrap;
   }
+}
+
+.page-footer--photo {
+  padding-top: 0;
 }
 
 .page-footer__title {
@@ -17,16 +29,19 @@
   line-height: 29px;
   margin: 0 auto;
   margin-bottom: 34px;
+  padding: 41px 20px 0;
+  box-sizing: border-box;
   width: 320px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__title {
+    padding: 0;
     font-size: 40px;
     width: 400px;
     line-height: 48px;
-    margin-bottom: 42px;
+    margin-bottom: 44px;
   }
 }
 
@@ -36,7 +51,7 @@
     line-height: 60px;
     width: 480px;
     margin: 0 auto;
-    padding: 0 118px;
+    // padding: 0 118px;
     margin-bottom: 56px;
   }
 }
@@ -56,6 +71,12 @@
   padding-top: 55px;
 }
 
+@media (min-width: $desktop-width) {
+  .page-footer--form .page-footer__wrapper {
+    padding-top: 0;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     width: 660px;
@@ -72,6 +93,7 @@
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 27px;
   }
 }
 
@@ -121,4 +143,11 @@
 
 .page-footer__academy-link img {
   margin-left: 15px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer--photo .page-footer__academy-link img {
+    margin-left: 13px;
+    padding-top: 8px;
+  }
 }

@@ -7,6 +7,19 @@
   justify-content: start;
   align-items: center;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama {
+    margin-bottom: 50px;
+  }
+}
+
+.panorama__tag-wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
 
   &::after {
     position: absolute;
@@ -20,7 +33,7 @@
     width: 140px;
     height: 36px;
     top: 0;
-    right: 19px;
+    right: 20px;
     text-transform: uppercase;
     text-align: center;
     background-color: $crimson-color;
@@ -30,53 +43,78 @@
 }
 
 @media (min-width: $tablet-width) {
-  .panorama::after {
-    top: 57px;
-    right: 19px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .panorama {
-    margin-bottom: 50px;
+  .panorama__tag-wrapper {
+    width: 660px;
 
     &::after {
-      top: 54px;
-      right: 296px;
+      top: 57px;
+      right: 19px;
     }
   }
 }
 
-.panorama__image {
-  width: 100%;
-  height: 137px;
+@media (min-width: $desktop-width) {
+  .panorama__tag-wrapper {
+    width: 960px;
+
+    &::after {
+      top: 54px;
+      right: 10px;
+    }
+  }
+}
+
+/* .panorama__wrapper {
+  width: 320px;
+  overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {
-  .panorama__image {
-    height: 509px;
+  .panorama__wrapper {
+    width: 660px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .panorama__wrapper {
+    width: 960px;
+  }
+}*/
+
+.panorama__image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__image {
+    width: auto;
+    height: 100%;
+  }
+}
+
+/* @media (min-width: $desktop-width) {
   .panorama__image {
     height: 506px;
   }
-}
+}*/
 
 .panorama__text-wrapper {
   background-color: $lightgray-background-color;
   position: relative;
   width: 280px;
   margin: 0 auto;
+  margin-top: -7px;
   padding: 18px;
-  padding-bottom: 20px;
+  padding-left: 17px;
+  padding-bottom: 44px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 
-  &::after {
+  /* &::after {
     position: absolute;
     content: "";
     top: 154px;
@@ -85,15 +123,15 @@
     background-repeat: no-repeat;
     width: 13px;
     height: 12px;
-  }
+  }*/
 }
 
 @media (min-width: $tablet-width) {
   .panorama__text-wrapper {
-    padding: 24px 29px;
+    padding: 24px 27px 16px;
     width: 620px;
 
-    &::after {
+    /* &::after {
       content: "";
       top: 30px;
       right: 28px;
@@ -101,29 +139,31 @@
       background-repeat: no-repeat;
       width: 13px;
       height: 12px;
-    }
+    }*/
   }
 }
 
 @media (min-width: $desktop-width) {
   .panorama__text-wrapper {
     width: 940px;
-    padding: 24px 27px;
+    padding: 24px 27px 25px;
 
-    &::after {
+    /* &::after {
       top: 30px;
       right: 32px;
-    }
+    }*/
   }
 }
 
 .panorama__user {
   margin: 0;
   padding: 0;
+  line-height: 23px;
 }
 
 .panorama__user-name {
   font-weight: $bold-font-weight;
+  margin-right: 1px;
 }
 
 .panorama__post-time {
@@ -148,43 +188,82 @@
 @media (min-width: $desktop-width) {
   .panorama__description {
     line-height: 23px;
-    width: 920px;
+    width: auto;
+    margin-bottom: 0;
   }
 }
 
 .panorama__likes {
-  position: relative;
+  position: absolute;
   margin: 0;
   font-size: $small-font-size;
   color: $crimson-color;
-  padding: 0 18px;
-  padding-left: 32px;
+  // padding: 0 18px;
+  // padding-left: 32px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  bottom: 19px;
+  left: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .panorama__likes {
-    padding-left: 27px;
-    margin-top: auto;
+    // padding-left: 27px;
+    // margin-top: auto;
     position: absolute;
     top: 25px;
-    right: 40px;
+    right: 28px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .panorama__likes {
     top: 25px;
-    right: 44px;
+    right: 32px;
   }
 }
 
 .panorama__likes-text {
-  margin-top: auto;
+  // margin-top: auto;
+  order: 2;
+  margin-right: 3px;
 }
 
 @media (min-width: $tablet-width) {
   .panorama__likes-text {
-    margin-top: 0;
+    // margin-top: 0;
+    margin-left: auto;
+    order: 1;
   }
+}
+
+.panorama__likes-value {
+  order: 3;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__likes-value {
+    order: 2;
+  }
+}
+
+.panorama__likes-link {
+  display: flex;
+  order: 1;
+  margin-right: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__likes-link {
+    order: 3;
+    align-items: flex-start;
+    margin-right: 0;
+    margin-left: 19px;
+    padding-top: 5px;
+  }
+}
+
+.panorama__likes-link img {
+  width: 100%;
 }

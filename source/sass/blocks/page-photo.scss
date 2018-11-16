@@ -1,3 +1,10 @@
 .page-photo {
   width: 100%;
+  // padding-top: 45px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-photo {
+    margin-bottom: 68px;
+  }
 }

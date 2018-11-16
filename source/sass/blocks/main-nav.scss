@@ -1,7 +1,7 @@
 .main-nav {
-  width: 320px;
+  // width: 320px;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: -67px;
   padding: 0;
   background-color: #283645;
   font-size: $middle-font-size;
@@ -12,42 +12,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 258px;
-    height: 286px;
-    bottom: -395px;
-    left: 0;
-    background-image: url("../img/iphone-hand-mobile@1x.png");
-    background-repeat: no-repeat;
-  }
-}
-
-.page-header--photo .main-nav::after {
-  content: none;
-}
-
-.page-header--form .main-nav::after {
-  content: none;
+  // position: relative;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: 660px;
+    // width: 660px;
     min-height: 361px;
     // margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.3);
-
-    &::after {
-      left: -20px;
-      bottom: -618px;
-      width: 700px;
-      height: 545px;
-      background-image: url("../img/iphone-hand-tablet@1x.png");
-    }
+    // background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -62,14 +35,23 @@
     line-height: 18px;
     font-weight: $basic-font-weight;
     text-transform: none;
+  }
+}
 
-    &::after {
-      top: 210px;
-      left: 26px;
-      width: 1050px;
-      height: 645px;
-      background-image: url("../img/iphone-hand-desktop@1x.png");
-    }
+.main-nav__outer-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-bottom: 1px;
+  border-bottom: solid 1px #000000;
+  box-sizing: border-box;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__outer-wrapper {
+    padding-bottom: 0;
+    width: auto;
+    border-bottom: none;
   }
 }
 
@@ -78,10 +60,12 @@
   justify-content: space-between;
   align-items: center;
   width: 320px;
+  // width: 100%;
+  margin: 0 auto;
   height: 69px;
-  padding: 18px 6px 21px 19px;
+  padding: 18px 18px 21px 21px;
   background-color: #283645;
-  border-bottom: solid 1px #000000;
+  // border-bottom: solid 1px #000000;
   box-sizing: border-box;
 }
 
@@ -89,7 +73,7 @@
   .main-nav__logo-wrapper {
     width: 660px;
     height: 110px;
-    padding-top: 0;
+    padding-left: 21px;
   }
 }
 
@@ -97,9 +81,8 @@
   .main-nav__logo-wrapper {
     width: 158px;
     height: 110px;
-    padding: 0;
-    margin-top: -14px;
-    margin-left: 10px;
+    padding-left: 10px;
+    // margin-top: -21px;
     background-color: transparent;
     border-bottom: none;
   }
@@ -115,15 +98,18 @@
   .main-nav__logo {
     width: 146px;
     height: 40px;
+    padding-bottom: 10px;
+    // margin-top: 6px;
+    // margin-left: 2px;
   }
 }
 
-@media (min-width: $desktop-width) {
+/* @media (min-width: $desktop-width) {
   .main-nav__logo {
-    width: 146px;
-    height: 40px;
+    padding-bottom: 20px;
+    // padding-left: 9px;
   }
-}
+}*/
 
 .main-nav__logo-mobile {
   display: block;
@@ -175,35 +161,69 @@
 
 .main-nav__button {
   @include reset-button;
+  // padding-top: 8px;
+  width: 24px;
+  height: 24px;
+  display: none;
 }
 
-@media (min-width: $tablet-width) {
+/* @media (min-width: $tablet-width) {
   .main-nav__button {
-    padding-top: 30px;
+    // padding-top: 30px;
+    padding-top: 9px;
   }
+} */
+
+/* @media (min-width: $desktop-width) {
+  .main-nav__button {
+    // display: none;
+  }
+}*/
+
+.main-nav__button--open {
+  width: 50px;
+  height: 24px;
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav__button {
-    display: none;
-  }
+.main-nav__button--open .button-svg__open {
+  display: inline-block;
+}
+
+.main-nav__button--open .button-svg__close {
+  display: none;
 }
 
 .main-nav__button--close {
   width: 24px;
+  height: 24px;
+  // padding-top: 5px;
+}
+
+.main-nav__button--close .button-svg__close {
+  display: inline-block;
 }
 
 .main-nav__button--close .button-svg__open {
   display: none;
 }
 
-.main-nav__button--open {
-  width: 50px;
+/* @media (min-width: $tablet-width) {
+  .main-nav__button--open {
+    padding-top: 16px;
+  }
+}*/
+
+/* .main-nav--opened .main-nav__button {
+  width: 24px;
 }
 
-.main-nav__button--open .button-svg__close {
-  display: none;
+
+
+.main-nav__button--open {
+  width: 50px;
+  margin-top: 4px;
 }
+
 
 .main-nav__button:hover .button-svg__fill {
   fill: $crimson-color;
@@ -211,4 +231,4 @@
 
 .main-nav__button:active .button-svg__fill {
   fill: rgba(210, 40, 86, 0.3);
-}
+}*/

@@ -6,18 +6,21 @@
 @media (min-width: $tablet-width) {
   .effect {
     width: 100%;
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $white-color;
-    margin-bottom: 74px;
+    // margin-bottom: 56px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .effect {
     background-color: $lightgray-background-color;
-    margin-bottom: 99px;
+    padding-top: 12px;
+    padding-bottom: 68px;
+    //margin-bottom: 99px;
   }
 }
 
@@ -38,9 +41,10 @@
 
 @media (min-width: $desktop-width) {
   .effect__wrapper {
-    width: 940px;
-    padding-top: 21px;
-    padding-bottom: 67px;
+    width: 960px;
+    padding: 0 10px;
+    // padding-top: 21px;
+    // padding-bottom: 67px;
   }
 }
 
@@ -58,7 +62,7 @@
   .effect__icon-timer {
     width: 298px;
     height: 345px;
-    margin-right: 69px;
+    margin-right: 67px;
   }
 }
 
@@ -77,8 +81,16 @@
   height: 200px;
   top: 56px;
   padding-bottom: 10px;
-  left: 19px;
+  left: 20px;
   box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .effect__time {
+    border-width: 12px;
+    top: 56px;
+    padding-bottom: 11px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -87,8 +99,8 @@
     height: 250px;
     border-width: 15px;
     font-size: 120px;
-    top: 72px;
-    left: 25px;
+    top: 71px;
+    left: 23px;
     padding-bottom: 10px;
   }
 }
@@ -100,9 +112,15 @@
   padding-top: 36px;
 }
 
+@media (min-width: $tablet-width) {
+  .effect__text-wrapper {
+    padding-top: 37px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .effect__text-wrapper {
-    padding-top: 0;
+    padding-top: 92px;
   }
 }
 
@@ -124,8 +142,14 @@
 @media (min-width: $desktop-width) {
   .effect__title {
     width: 540px;
-    margin-top: 92px;
-    margin-bottom: 20px;
+    // margin-top: 92px;
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__title br {
+    display: none;
   }
 }
 
@@ -136,7 +160,7 @@
 @media (min-width: $tablet-width) {
   .effect__text {
     margin: 0;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
     width: 300px;
   }
 }
@@ -146,8 +170,28 @@
     font-size: $middle-font-size;
     line-height: 30px;
     margin-right: 0;
-    margin-bottom: 32px;
-    width: 522px;
+    margin-bottom: 30px;
+    width: 526px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .effect__text br:first-of-type {
+    display: none;
+  }
+
+  .effect__text br:last-of-type {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__text br:first-of-type {
+    display: inline-block;
+  }
+
+  .effect__text br:last-of-type {
+    display: none;
   }
 }
 

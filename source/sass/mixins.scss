@@ -32,8 +32,8 @@
 @mixin input-icon {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -7px;
+  left: -1px;
+  bottom: -8px;
   width: 35px;
   height: 35px;
   padding: 0;

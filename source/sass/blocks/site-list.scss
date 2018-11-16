@@ -3,15 +3,16 @@
   text-align: center;
 
   @include reset-list;
-  width: 320px;
+  // width: 320px;
+  width: 100%;
   min-height: 252px;
 }
 
-@media (min-width: $tablet-width) {
+/* @media (min-width: $tablet-width) {
   .site-list {
     width: 660px;
   }
-}
+}*/
 
 @media (min-width: $desktop-width) {
   .site-list {

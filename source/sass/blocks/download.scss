@@ -1,43 +1,82 @@
 .download {
-  position: static;
+  position: relative;
   padding: 0;
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 9px;
+  // margin-top: 465px;
+  // margin-bottom: 9px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 258px;
+    height: 286px;
+    bottom: 272px;
+    left: 1px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.page-header--photo .download::after {
+  content: none;
+}
+
+.page-header--form .download::after {
+  content: none;
 }
 
 @media (min-width: $tablet-width) {
   .download {
+    width: 660px;
+    // margin-bottom: 9px;
+    // margin-top: 465px;
     // position: relative;
     // margin-bottom: 0;
+
+    &::after {
+      left: -20px;
+      bottom: 0;
+      width: 660px;
+      height: 545px;
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .download {
     width: 960px;
-    margin: 0 auto;
+    // margin: 0 auto;
+
+    &::after {
+      top: -645px;
+      left: 26px;
+      width: 933px;
+      height: 645px;
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+    }
   }
 }
 
 .download__wrapper {
-  min-height: 216px;
-  padding: 27px 0;
-  background-color: #1d2631;
+  min-height: 215px;
+  padding: 29px 0 27px;
+  // background-color: #1d2631;
   color: $white-color;
+  // margin-top: 462px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .download__wrapper {
     content: "";
+    z-index: 1;
     padding: 0;
     padding-top: 1px;
     position: absolute;
-    // top: -575px;
     top: -527px;
-    // left: 9px;
-    left: 93px;
+    left: 9px;
     width: 320px;
     background: transparent;
   }
@@ -46,9 +85,9 @@
 @media (min-width: $desktop-width) {
   .download__wrapper {
     // top: -715px;
-    top: -648px;
     // left: 9px;
-    left: 25px;
+    top: -643px;
+    left: 10px;
     width: 300px;
     height: 500px;
     background: transparent;
@@ -92,7 +131,7 @@
 
   @include reset-button;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 33px;
   padding: 13px 16px;
   width: 281px;
   height: 55px;
@@ -134,22 +173,27 @@
     width: 302px;
     height: 56px;
     font-size: 21px;
+    margin-bottom: 52px;
   }
 }
 
 .download__link-wrapper {
-  margin-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 58px;
+  margin-bottom: 13px;
 }
 
 @media (min-width: $tablet-width) {
   .download__link-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .download__link-wrapper {
-    margin-top: 20px;
+    margin: 15px 48px 0;
   }
 }
 
