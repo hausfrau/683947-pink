@@ -4,24 +4,23 @@
 
 @media (min-width: $tablet-width) {
   .socials {
-    margin-bottom: 0;
     width: 196px;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .socials {
     width: 166px;
-    // margin-left: 4px;
-    // margin-bottom: 3px;
   }
 }
 
 .socials__list {
-  @include reset-list;
   display: flex;
   justify-content: space-between;
   width: 182px;
+
+  @include reset-list;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,17 +29,23 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .socials__list {
+    width: 174px;
+  }
+}
+
 .socials__link {
   display: inline-block;
   width: 45px;
   height: 45px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 45px;
   border-style: solid;
   border-width: 3px;
   border-color: rgba(40, 54, 69, 0.1);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .socials__link--twitter {

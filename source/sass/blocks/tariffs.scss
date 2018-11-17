@@ -1,24 +1,20 @@
 .tariffs {
   position: relative;
   width: 100%;
-  background-color: $lightgray-background-color;
-  padding-top: 91px;
-  // padding-bottom: 14px;
-  // overflow: hidden;
-  // margin-bottom: 41px;
   margin-top: -15px;
+  padding-top: 91px;
+  background-color: $lightgray-background-color;
   overflow: hidden;
-  // padding-left: 22px;
 
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
     top: -1px;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
   }
@@ -28,11 +24,8 @@
   .tariffs {
     margin: 0;
     padding: 0;
-    // display: flex;
-    // justify-content: flex-start;
     padding-top: 89px;
     padding-bottom: 68px;
-    // margin-bottom: 45px;
 
     &::before {
       top: 0;
@@ -43,62 +36,42 @@
 @media (min-width: $desktop-width) {
   .tariffs {
     margin: 0 auto;
-    padding: 0;
     padding-top: 140px;
     padding-bottom: 95px;
-    // justify-content: center;
   }
 }
 
 .tariffs__wrapper {
   width: 320px;
-  // overflow: hidden;
-  box-sizing: border-box;
-  // background-color: #f2f2f2;
-  // display: flex;
-  //justify-content: center;
-  //align-items: center;
-  // padding-left: 32px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .tariffs__wrapper {
     width: 660px;
     padding: 0;
-    //margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .tariffs__wrapper {
     width: 960px;
-    // display: flex;
-    //flex-direction: column;
-    //justify-content: flex-start;
-    //align-items: center;
-    //padding: 0;
   }
 }
 
 .tariffs__list {
-  // width: auto;
-  // margin-left: 10px;
-  // margin-right: 10px;
   position: relative;
   left: -535px;
-  border-collapse: collapse;
   box-sizing: border-box;
+  border-collapse: collapse;
 }
 
 @media (min-width: $tablet-width) {
   .tariffs__list {
-    width: 620px;
     position: static;
+    width: 620px;
     margin: 0 auto;
-    // margin: 0 20px;
-    // margin-left: 10px;
-    // margin-right: 10px;
   }
 }
 
@@ -108,97 +81,84 @@
   }
 }
 
-.tariffs__list tr {
-  // display: flex;
-}
-
 .tariffs__title {
   min-width: 278px;
-  // min-height: 59px;
   padding: 18px 0 17px 21px;
+  box-sizing: border-box;
   text-align: left;
+  text-transform: none;
+  font-size: $basic-font-size;
+  font-weight: $basic-font-weight;
   background-color: $white-color;
   border-style: solid;
   border-color: $basic-border-color;
   border-width: 2px;
   border-top-style: none;
   border-right-style: none;
-  text-transform: none;
-  font-size: $basic-font-size;
-  font-weight: $basic-font-weight;
-  box-sizing: border-box;
-  // box-sizing: border-box;
-  //flex-basis: 276px;
 }
 
 @media (min-width: $tablet-width) {
   .tariffs__title {
-    //text-align: left;
     min-width: 155px;
-    // min-height: 45px;
     padding: 10px 0 11px 16px;
-    // padding-left: 15px;
-    // padding-right: 21px;
-    // flex-basis: 152px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .tariffs__title {
     min-width: 234px;
-    font-size: $middle-font-size;
-    font-weight: $basic-font-weight;
-    // min-height: 59px;
     padding: 17px 20px 18px;
-    // padding: 34px 68px;
-    // flex-basis: 233px;
+    font-size: $middle-font-size;
   }
 }
 
 .tariffs__title-header {
+  min-width: 278px;
+  box-sizing: border-box;
   color: transparent;
-  border: none;
-  // background: transparent;
   background-color: transparent;
   border-bottom: solid 2px $basic-border-color;
-  // box-sizing: border-box;
-  // flex-basis: 276px;
-  min-width: 278px;
-  // min-height: 94px;
-  box-sizing: border-box;
+  border-left: none;
 }
 
 @media (min-width: $tablet-width) {
   .tariffs__title-header {
-    // flex-basis: 152px;
     min-width: 155px;
-    // min-height: 75px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .tariffs__title-header {
-    // flex-basis: 233px;
     min-width: 234px;
-    // min-height: 94px;
   }
 }
 
 .tariffs__header--hit {
   position: relative;
   overflow: hidden;
-}
 
-.tariffs__header--hit::before {
-  content: "";
-  position: absolute;
-  width: 74px;
-  height: 73px;
-  background-image: url("../img/bg-hit.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 0;
-  left: -1px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 74px;
+    height: 73px;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::after {
+    content: "Хит";
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    font-size: $basic-font-size;
+    text-transform: uppercase;
+    color: $white-color;
+    transform: rotate(-45deg);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -208,27 +168,16 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .tariffs__header--hit::before {
-    top: 0;
-  }
-}
-
-.tariffs__header--hit::after {
-  content: "Хит";
-  color: $white-color;
-  font-size: $basic-font-size;
-  position: absolute;
-  transform: rotate(-45deg);
-  top: 14px;
-  left: 10px;
-  text-transform: uppercase;
-}
-
 @media (min-width: $tablet-width) {
   .tariffs__header--hit::after {
     top: 4px;
     left: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs__header--hit::before {
+    top: 0;
   }
 }
 
@@ -240,38 +189,29 @@
 }
 
 .tariffs__header {
+  min-width: 278px;
   padding: 16px 0 19px;
+  box-sizing: border-box;
   text-align: center;
+  text-transform: uppercase;
   color: $white-color;
   background-color: $basic-darker-color;
-  text-transform: uppercase;
   border-right: solid 2px $basic-border-color;
-  min-width: 278px;
-  // min-height: 94px;
-  box-sizing: border-box;
-  // box-sizing: border-box;
-  // flex-basis: 276px;
 }
 
 @media (min-width: $tablet-width) {
   .tariffs__header {
+    min-width: 155px;
     padding: 12px 0 6px;
     line-height: 30px;
     font-weight: $bold-font-weight;
-    min-width: 155px;
-    // min-height: 75px;
-    // padding: 7px 8px;
-    // flex-basis: 152px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .tariffs__header {
-    padding: 16px 0 14px;
     min-width: 234px;
-    // min-height: 94px;
-    // padding: 7px 8px;
-    // flex-basis: 233px;
+    padding: 16px 0 14px;
   }
 }
 
@@ -285,17 +225,16 @@
 
 @media (min-width: $tablet-width) {
   .tariffs__name {
-    font-size: 16px;
-    // padding-top: 7px;
-    padding-left: 2px;
     margin-bottom: 0;
+    padding-left: 2px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .tariffs__name {
-    font-size: 18px;
     margin-bottom: 4px;
+    font-size: 18px;
   }
 }
 
@@ -308,7 +247,6 @@
 @media (min-width: $tablet-width) {
   .tariffs__price {
     font-size: $middle-font-size;
-    font-weight: $light-font-weight;
   }
 }
 
@@ -319,26 +257,22 @@
 }
 
 .tariffs__facilities-item {
-  min-width: 278px;
-  box-sizing: border-box;
-  border-left: solid 2px $basic-border-color;
   position: relative;
-  // min-height: 59px;
+  min-width: 278px;
   padding: 17px 0 17px 22px;
-  // padding: 24px 17px 20px 23px;
-  // box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: uppercase;
   background-color: $white-color;
   border-bottom: solid 2px $basic-border-color;
-  text-transform: uppercase;
-  // flex-basis: 276px;
+  border-left: solid 2px $basic-border-color;
 
   &::after {
     content: "";
     position: absolute;
-    width: 27px;
-    height: 27px;
     top: 14px;
     right: 17px;
+    width: 27px;
+    height: 27px;
     background-image: url("../img/icon-no-orange.svg");
     background-repeat: no-repeat;
   }
@@ -347,15 +281,12 @@
 @media (min-width: $tablet-width) {
   .tariffs__facilities-item {
     min-width: 155px;
-    // flex-basis: 152px;
-    // min-height: 45px;
     padding: 10px 0 11px 16px;
-    // padding: 0;
     color: transparent;
 
     &::after {
-      right: 62px;
       top: 9px;
+      right: 62px;
     }
   }
 }
@@ -363,10 +294,7 @@
 @media (min-width: $desktop-width) {
   .tariffs__facilities-item {
     min-width: 234px;
-    // min-height: 59px;
     padding: 0;
-    // color: transparent;
-    // flex-basis: 233px;
 
     &::after {
       top: 16px;
@@ -378,10 +306,10 @@
 .tariffs__facilities-item--included::after {
   content: "";
   position: absolute;
-  width: 31px;
-  height: 29px;
   top: 19px;
   right: 16px;
+  width: 31px;
+  height: 29px;
   background-size: 100%;
   background-image: url("../img/icon-yes-green.svg");
   background-repeat: no-repeat;
@@ -402,13 +330,13 @@
 }
 
 .tariffs__toggles {
-  margin: 0;
-  padding: 36px 0 45px 0;
-  width: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 320px;
   height: 99px;
+  margin: 0;
+  padding: 36px 0 45px 0;
   box-sizing: border-box;
 }
 
@@ -419,9 +347,10 @@
 }
 
 .tariffs__button {
-  @include reset-button;
   width: 6px;
   height: 6px;
+
+  @include reset-button;
   border-color: rgba(40, 54, 69, 0.3);
   border-style: solid;
   border-width: 3px;

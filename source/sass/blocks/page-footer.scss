@@ -10,11 +10,10 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding-top: 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // flex-wrap: wrap;
+    padding-top: 64px;
   }
 }
 
@@ -22,72 +21,88 @@
   padding-top: 0;
 }
 
+@media (min-width: $desktop-width) {
+  .page-footer--form {
+    padding-top: 64px;
+  }
+}
+
 .page-footer--photo {
   padding-top: 0;
 }
 
 .page-footer__title {
+  width: 320px;
+  padding: 41px 20px 0;
+  box-sizing: border-box;
+
   @include reset-title;
+  margin: 0 auto;
+  margin-bottom: 34px;
   font-size: $big-font-size;
   font-weight: $light-font-weight;
   line-height: 29px;
-  margin: 0 auto;
-  margin-bottom: 34px;
-  padding: 41px 20px 0;
-  box-sizing: border-box;
-  width: 320px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__title {
+    width: 400px;
+    margin-bottom: 44px;
     padding: 0;
     font-size: 40px;
-    width: 400px;
     line-height: 48px;
-    margin-bottom: 44px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__title {
-    font-size: 50px;
-    line-height: 60px;
     width: 480px;
     margin: 0 auto;
-    // padding: 0 118px;
     margin-bottom: 56px;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
 .page-footer__wrapper {
-  width: 320px;
-  padding: 40px 20px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  padding: 40px 20px;
   box-sizing: border-box;
 }
 
-.page-footer--form .page-footer__wrapper {
-  padding-top: 55px;
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer--form .page-footer__wrapper {
-    padding-top: 0;
+@media (min-width: 320px) {
+  .page-footer__wrapper {
+    display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    width: 660px;
-    padding: 29px 20px 40px;
+    display: flex;
+  }
+}
+
+.page-footer--form .page-footer__wrapper {
+  display: flex;
+  padding-top: 55px;
+}
+
+.page-footer--photo .page-footer__wrapper {
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    width: 660px;
+    padding: 29px 20px 40px;
   }
 }
 
@@ -95,9 +110,15 @@
   .page-footer__wrapper {
     width: 960px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
     padding-top: 27px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer--form .page-footer__wrapper {
+    padding-top: 0;
   }
 }
 
@@ -107,27 +128,28 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__logo {
-    margin-bottom: 24px;
     margin-top: 6px;
+    margin-bottom: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__logo img {
     content: "";
-    background-image: url("../img/logo-pink-blue-desktop.svg");
-    background-repeat: no-repeat;
     width: 146px;
     height: 40px;
+    background-image: url("../img/logo-pink-blue-desktop.svg");
+    background-repeat: no-repeat;
   }
 }
 
 .page-footer__academy-link {
+  display: flex;
+  align-items: center;
+
   @include reset-button;
   text-decoration: none;
   line-height: 18px;
-  display: flex;
-  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -139,19 +161,39 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__academy-link {
-    font-size: $middle-font-size;
     width: 153px;
     margin-bottom: 8px;
+    font-size: $middle-font-size;
   }
 }
 
 .page-footer__academy-link img {
   margin-left: 15px;
+  padding-top: 2px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__academy-link img {
+    padding-top: 10px;
+    margin-left: 14px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer--photo .page-footer__academy-link img {
-    margin-left: 13px;
     padding-top: 8px;
+    margin-left: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer--form .page-footer__academy-link img {
+    padding-top: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer--form .socials__list {
+    width: 180px;
   }
 }

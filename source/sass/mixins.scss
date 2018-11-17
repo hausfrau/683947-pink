@@ -3,8 +3,8 @@
   line-height: $basic-line-height;
   font-weight: $basic-font-weight;
   font-family: $font-family;
-  color: $basic-darker-color;
   letter-spacing: 0;
+  color: $basic-darker-color;
 }
 
 @mixin reset-list {
@@ -15,12 +15,12 @@
 
 @mixin reset-button {
   padding: 0;
-  border: none;
+  box-sizing: border-box;
   font: inherit;
   color: inherit;
   background-color: transparent;
+  border: none;
   cursor: pointer;
-  box-sizing: border-box;
 }
 
 @mixin reset-title {
@@ -61,11 +61,11 @@
 }
 
 @mixin contacts-icon {
-  z-index: 1;
   content: "";
   position: absolute;
   top: -72px;
   left: 439px;
+  z-index: 1;
   width: 60px;
   height: 60px;
   background-repeat: no-repeat;

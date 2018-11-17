@@ -3,20 +3,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // width: 100%;
-  // height: 200px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
-  // background-size: 100%;
   background-position-y: -447px;
 
   &::after {
     content: "";
     position: absolute;
-    z-index: 2;
     top: -1px;
     left: 0;
+    z-index: 2;
     width: 100%;
     height: 100%;
     background-image: url("../img/bg-triangle-white-footer.svg");
@@ -24,13 +21,10 @@
     background-size: 100%;
     background-position: top;
   }
-  /* src="./img/bg-map-mobile@1x.png" width="320" height="645" alt="Офис компании по адресу г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
-      </picture>*/
 }
 
 @media (min-width: $tablet-width) {
   .map {
-    // height: 373px;
     margin-bottom: 0;
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-position-y: -349px;
@@ -39,11 +33,9 @@
 
 @media (min-width: $desktop-width) {
   .map {
-    // margin-bottom: 21px;
-    // height: 494px;
     width: 100%;
-    margin-bottom: 35px;
     height: 499px;
+    margin-bottom: 35px;
     background-position-y: -281px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
   }
@@ -55,13 +47,11 @@
   margin: 0 auto;
 
   &::after {
-    position: absolute;
-    z-index: 1;
     content: "";
-    // top: 94px;
-    // left: 142px;
+    position: absolute;
     top: calc(50% - 7px);
     left: calc(50% - 18px);
+    z-index: 1;
     width: 36px;
     height: 36px;
     background-image: url("../img/icon-map-marker.svg");
@@ -75,8 +65,6 @@
     height: 372px;
 
     &::after {
-      // top: 193px;
-      // left: 312px;
       top: calc(50% + 4px);
     }
   }
@@ -88,75 +76,18 @@
     height: 480px;
 
     &::after {
-      // top: 241px;
-      // left: 461px;
       top: calc(50% + 10px);
     }
   }
 }
 
 .map__iframe {
-  position: absolute;
-  z-index: 1;
   content: "";
+  position: absolute;
   top: 0;
   left: 0;
-  border: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
+  border: 0;
 }
-
-/*
-.map__image {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-
-  &::before {
-    position: absolute;
-    z-index: 1;
-    content: "";
-    top: 94px;
-    left: 142px;
-    width: 36px;
-    height: 36px;
-    background-image: url("../img/icon-map-marker.svg");
-    background-repeat: no-repeat;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .map__image {
-    background: none;
-    height: 375px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .map__image {
-    background: none;
-    height: 486px;
-  }
-}
-
-.map__image img {
-  margin-top: -445px;
-}
-
-@media (min-width: $tablet-width) {
-  .map__image img {
-    width: 700px;
-    height: auto;
-    margin: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .map__image img {
-    width: 1200px;
-    height: auto;
-  }
-}*/

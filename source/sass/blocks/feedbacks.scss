@@ -1,22 +1,21 @@
 .feedbacks {
   position: static;
-  margin: 0 auto;
-  // margin-top: -43px;
-  margin-bottom: 45px;
-  padding: 0 20px;
-  padding-top: 42px;
-  text-align: center;
-  width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  padding: 0 20px;
+  padding-top: 42px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .feedbacks {
-    margin-bottom: 6px;
     width: 660px;
+    margin-bottom: 6px;
     padding-top: 98px;
   }
 }
@@ -25,31 +24,8 @@
   .feedbacks {
     position: relative;
     width: 960px;
-    // position: relative;
+    margin-bottom: 29px;
     padding: 0 10px;
     padding-top: 185px;
-    margin-bottom: 29px;
-/*
-    &::before {
-      content: "";
-      position: absolute;
-      width: 22px;
-      height: 42px;
-      background-image: url("../img/icon-review-arrow-left.svg");
-      top: 157px;
-      left: 0;
-      background-repeat: no-repeat;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 22px;
-      height: 42px;
-      background-image: url("../img/icon-review-arrow-right.svg");
-      top: 157px;
-      right: 0;
-      background-repeat: no-repeat;
-    }*/
   }
 }

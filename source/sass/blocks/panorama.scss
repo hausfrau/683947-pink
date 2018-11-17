@@ -1,12 +1,12 @@
 .panorama {
-  padding: 0;
   position: relative;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  width: 100%;
   margin-bottom: 20px;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,23 +22,23 @@
   padding: 0;
 
   &::after {
-    position: absolute;
-    display: inline-block;
-    z-index: 100;
     content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 100;
+    display: inline-block;
+    width: 140px;
+    height: 36px;
+    padding-top: 6px;
+    box-sizing: border-box;
     font-size: 12px;
     line-height: 24px;
     font-weight: $bold-font-weight;
-    color: $white-color;
-    width: 140px;
-    height: 36px;
-    top: 0;
-    right: 20px;
     text-transform: uppercase;
     text-align: center;
+    color: $white-color;
     background-color: $crimson-color;
-    padding-top: 6px;
-    box-sizing: border-box;
   }
 }
 
@@ -64,82 +64,39 @@
   }
 }
 
-/* .panorama__wrapper {
-  width: 320px;
-  overflow: hidden;
-}
-
-@media (min-width: $tablet-width) {
-  .panorama__wrapper {
-    width: 660px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .panorama__wrapper {
-    width: 960px;
-  }
-}*/
-
 .panorama__image {
   width: 100%;
-  height: auto;
   max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: $tablet-width) {
   .panorama__image {
     width: auto;
     height: 100%;
+    object-fit: none;
   }
 }
 
-/* @media (min-width: $desktop-width) {
-  .panorama__image {
-    height: 506px;
-  }
-}*/
-
 .panorama__text-wrapper {
-  background-color: $lightgray-background-color;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 280px;
   margin: 0 auto;
   margin-top: -7px;
   padding: 18px;
   padding-left: 17px;
   padding-bottom: 44px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   box-sizing: border-box;
-
-  /* &::after {
-    position: absolute;
-    content: "";
-    top: 154px;
-    right: 248px;
-    background-image: url("../img/icon-heart-crimson.svg");
-    background-repeat: no-repeat;
-    width: 13px;
-    height: 12px;
-  }*/
+  background-color: $lightgray-background-color;
 }
 
 @media (min-width: $tablet-width) {
   .panorama__text-wrapper {
-    padding: 24px 27px 16px;
     width: 620px;
-
-    /* &::after {
-      content: "";
-      top: 30px;
-      right: 28px;
-      background-image: url("../img/icon-heart-crimson.svg");
-      background-repeat: no-repeat;
-      width: 13px;
-      height: 12px;
-    }*/
+    padding: 24px 27px 16px;
   }
 }
 
@@ -147,11 +104,6 @@
   .panorama__text-wrapper {
     width: 940px;
     padding: 24px 27px 25px;
-
-    /* &::after {
-      top: 30px;
-      right: 32px;
-    }*/
   }
 }
 
@@ -162,8 +114,8 @@
 }
 
 .panorama__user-name {
-  font-weight: $bold-font-weight;
   margin-right: 1px;
+  font-weight: $bold-font-weight;
 }
 
 .panorama__post-time {
@@ -174,44 +126,39 @@
 
 .panorama__description {
   margin: 0;
-  padding: 0;
   margin-bottom: 9px;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .panorama__description {
-    box-sizing: border-box;
     width: 595px;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: $desktop-width) {
   .panorama__description {
-    line-height: 23px;
     width: auto;
     margin-bottom: 0;
+    line-height: 23px;
   }
 }
 
 .panorama__likes {
   position: absolute;
-  margin: 0;
-  font-size: $small-font-size;
-  color: $crimson-color;
-  // padding: 0 18px;
-  // padding-left: 32px;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: flex-start;
   bottom: 19px;
   left: 18px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  font-size: $small-font-size;
+  text-transform: uppercase;
+  color: $crimson-color;
 }
 
 @media (min-width: $tablet-width) {
   .panorama__likes {
-    // padding-left: 27px;
-    // margin-top: auto;
-    position: absolute;
     top: 25px;
     right: 28px;
   }
@@ -225,16 +172,14 @@
 }
 
 .panorama__likes-text {
-  // margin-top: auto;
   order: 2;
   margin-right: 3px;
 }
 
 @media (min-width: $tablet-width) {
   .panorama__likes-text {
-    // margin-top: 0;
-    margin-left: auto;
     order: 1;
+    margin-left: auto;
   }
 }
 

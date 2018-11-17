@@ -1,27 +1,20 @@
 .site-list {
-  background-color: #283645;
-  text-align: center;
-
-  @include reset-list;
-  // width: 320px;
   width: 100%;
   min-height: 252px;
-}
 
-/* @media (min-width: $tablet-width) {
-  .site-list {
-    width: 660px;
-  }
-}*/
+  @include reset-list;
+  text-align: center;
+  background-color: #283645;
+}
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 622px;
-    margin-right: 10px;
-    min-height: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 622px;
+    min-height: 0;
+    margin-right: 10px;
     background-color: transparent;
   }
 }
@@ -43,8 +36,8 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item {
-    border: none;
     padding: 0;
+    border: none;
   }
 }
 
