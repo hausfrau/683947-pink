@@ -261,35 +261,19 @@
 .tariffs__facilities-item {
   position: relative;
   min-width: 278px;
-  padding: 17px 0 17px 22px;
+  padding: 14px 17px 15px 21px;
   box-sizing: border-box;
   text-transform: uppercase;
   background-color: $white-color;
   border-bottom: solid 2px $basic-border-color;
   border-left: solid 2px $basic-border-color;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 14px;
-    right: 17px;
-    width: 27px;
-    height: 27px;
-    background-image: url("../img/icon-no-orange.svg");
-    background-repeat: no-repeat;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .tariffs__facilities-item {
     min-width: 155px;
-    padding: 10px 0 11px 16px;
+    padding: 4px 15px 4px 18px;
     color: transparent;
-
-    &::after {
-      top: 9px;
-      right: 62px;
-    }
   }
 }
 
@@ -297,37 +281,74 @@
   .tariffs__facilities-item {
     min-width: 234px;
     padding: 0;
-
-    &::after {
-      top: 16px;
-      right: 102px;
-    }
   }
 }
 
-.tariffs__facilities-item--included::after {
-  content: "";
-  position: absolute;
-  top: 19px;
-  right: 16px;
-  width: 31px;
-  height: 29px;
-  background-size: 100%;
-  background-image: url("../img/icon-yes-green.svg");
-  background-repeat: no-repeat;
+.tariffs__facilities-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
-  .tariffs__facilities-item--included::after {
-    top: 12px;
-    right: 60px;
+  .tariffs__facilities-item-wrapper {
+    justify-content: center;
+  }
+}
+
+.tariffs__facilities-content {
+  display: inline-block;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__facilities-content {
+    display: none;
+  }
+}
+
+.tariffs__facilities-filter-wrapper {
+  display: flex;
+}
+
+.tariffs__facilities-filter {
+  display: flex;
+}
+
+.tariffs__facilities-filter--included {
+  width: 30px;
+  height: 22px;
+  padding-top: 1px;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__facilities-filter--included {
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .tariffs__facilities-item--included::after {
-    top: 21px;
-    right: 101px;
+  .tariffs__facilities-filter--included {
+    padding-top: 7px;
+  }
+}
+
+.tariffs__facilities-content--not-included {
+  width: 31px;
+  height: 27px;
+  padding-bottom: 2px;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__facilities-content--not-included {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs__facilities-content--not-included {
+    width: 28px;
+    height: 26px;
+    padding: 0;
   }
 }
 
