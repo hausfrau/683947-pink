@@ -14,6 +14,12 @@
   @include reset-list;
 }
 
+@media (min-width: $tablet-width) {
+  .slider__list {
+    margin-bottom: 14px;
+  }
+}
+
 .slider__item {
   padding: 0 1px;
 }
@@ -105,8 +111,8 @@
       content: "";
       position: absolute;
       top: -81px;
-      width: 81px;
-      height: 65px;
+      width: 78px;
+      height: 69px;
       transform: translate(-50%, -50%);
       left: 50%;
       background-image: url("../img/icon-quotes.svg");
@@ -119,6 +125,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 60px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggle {
+    width: 65px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -130,6 +144,7 @@
 .slider__button {
   width: 6px;
   height: 6px;
+  margin-right: 19px;
 
   @include reset-button;
   border-color: rgba(40, 54, 69, 0.3);
@@ -138,14 +153,27 @@
   border-radius: 50%;
 }
 
-.slider__button:not(:last-child) {
-  margin-right: 18px;
+@media (min-width: $tablet-width) {
+  .slider__button {
+    margin-right: 18px;
+  }
 }
 
 .slider__toggle--current {
   width: 12px;
   height: 12px;
+  margin-right: 17px;
   border-color: $basic-darker-color;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggle--current {
+    margin-right: 16px;
+  }
+}
+
+.slider__button:last-child {
+  margin-right: 0;
 }
 
 @media (min-width: $desktop-width) {

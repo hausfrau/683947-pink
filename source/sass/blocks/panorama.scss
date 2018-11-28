@@ -59,12 +59,13 @@
 
     &::after {
       top: 54px;
-      right: 10px;
+      right: 11px;
     }
   }
 }
 
 .panorama__image {
+  display: flex;
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -85,9 +86,7 @@
   justify-content: flex-start;
   width: 280px;
   margin: 0 auto;
-  margin-top: -7px;
   padding: 18px;
-  padding-left: 17px;
   padding-bottom: 44px;
   box-sizing: border-box;
   background-color: $lightgray-background-color;
@@ -96,7 +95,7 @@
 @media (min-width: $tablet-width) {
   .panorama__text-wrapper {
     width: 620px;
-    padding: 24px 27px 16px;
+    padding: 24px 28px 16px;
   }
 }
 
@@ -160,7 +159,7 @@
 @media (min-width: $tablet-width) {
   .panorama__likes {
     top: 25px;
-    right: 28px;
+    right: 27px;
   }
 }
 

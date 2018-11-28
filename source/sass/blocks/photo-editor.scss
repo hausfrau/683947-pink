@@ -72,7 +72,7 @@
   justify-content: center;
   width: 320px;
   margin: 0 auto;
-  padding: 19px 20px 13px;
+  padding: 19px 20px 20px;
   box-sizing: border-box;
 }
 
@@ -90,8 +90,14 @@
 @media (min-width: $desktop-width) {
   .photo-editor__photo {
     width: 468px;
-    padding: 58px 90px 50px 80px;
+    padding: 58px 90px 56px 80px;
   }
+}
+
+.photo-editor__image {
+  display: flex;
+  width: 280px;
+  height: 374px;
 }
 
 @media (min-width: $tablet-width) {
@@ -131,7 +137,7 @@
     margin: 0;
     padding: 0;
     padding-top: 41px;
-    padding-bottom: 58px;
+    padding-bottom: 56px;
   }
 }
 
@@ -140,7 +146,6 @@
   justify-content: center;
   align-items: center;
   width: 48px;
-  margin-right: 32px;
 }
 
 @media (min-width: $tablet-width) {
@@ -162,6 +167,14 @@
     padding-right: 31px;
     box-sizing: border-box;
   }
+}
+
+.photo-editor__tools-wrapper:nth-child(1) {
+  margin-right: 34px;
+}
+
+.photo-editor__tools-wrapper:nth-child(2) {
+  margin-right: 39px;
 }
 
 .photo-editor__tools-wrapper--current {
@@ -198,14 +211,19 @@
 }
 
 label.crop img {
+  display: flex;
   width: 48px;
   height: 48px;
+  padding-bottom: 2px;
+  padding-left: 3px;
 }
 
 @media (min-width: $tablet-width) {
   label.crop img {
     width: 22px;
     height: 22px;
+    padding-bottom: 0;
+    padding-left: 1px;
   }
 }
 
@@ -217,15 +235,19 @@ label.crop img {
 }
 
 label.exposure img {
+  display: flex;
   width: 48px;
   height: 48px;
+  padding-top: 2px;
 }
 
 @media (min-width: $tablet-width) {
   label.exposure img {
-    width: 24px;
-    height: 22px;
-    margin-top: 8px;
+    width: 25px;
+    height: 24px;
+    margin-top: 7px;
+    padding-top: 0;
+    padding-left: 1px;
   }
 }
 
@@ -237,33 +259,37 @@ label.exposure img {
 }
 
 label.tint {
-  padding-buttom: 0;
+  padding-bottom: 0;
   padding-left: 0;
 }
 
 @media (min-width: $tablet-width) {
   label.tint {
-    padding-buttom: 1px;
+    padding-bottom: 1px;
     padding-left: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   label.tint {
-    padding-buttom: 0;
+    padding-bottom: 0;
     padding-left: 0;
   }
 }
 
 label.tint img {
+  display: flex;
   width: 31px;
   height: 31px;
+  padding-right: 11px;
+  padding-bottom: 3px;
 }
 
 @media (min-width: $tablet-width) {
   label.tint img {
     width: 16px;
     height: 16px;
+    padding-bottom: 1px;
   }
 }
 
@@ -288,7 +314,7 @@ label.tint img {
 .photo-editor__control-bar--current {
   position: absolute;
   top: 85px;
-  left: -17px;
+  left: -12px;
   display: block;
 }
 
@@ -333,11 +359,11 @@ label.tint img {
   }
 
   .exposure .photo-editor__control-button {
-    right: 163px;
+    right: 162px;
   }
 
   .tint .photo-editor__control-button {
-    right: 92px;
+    right: 91px;
   }
 }
 
@@ -361,12 +387,12 @@ label.tint img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 111px;
+  padding-top: 110px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 73px;
+    top: 71px;
     left: 0;
     width: 100%;
     height: 1px;
@@ -426,6 +452,7 @@ label.tint img {
 
 .photo-editor__submit {
   margin-bottom: 12px;
+  padding-bottom: 3px;
   color: $crimson-color;
   border-color: $crimson-color;
 }
@@ -448,6 +475,7 @@ label.tint img {
 }
 
 .photo-editor__reset {
+  padding-bottom: 3px;
   color: rgba(40, 54, 69, 0.1);
   border-color: rgba(40, 54, 69, 0.1);
 }

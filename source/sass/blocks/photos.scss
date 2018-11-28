@@ -102,6 +102,7 @@
 }
 
 .photos__image {
+  display: flex;
   width: 280px;
   height: 180px;
 }
@@ -128,7 +129,6 @@
   height: 100%;
   min-height: 121px;
   margin: 0 auto;
-  margin-top: -7px;
   padding: 19px 18px 44px;
   box-sizing: border-box;
   background-color: $lightgray-background-color;
@@ -144,7 +144,7 @@
 
 @media (min-width: $desktop-width) {
   .photos__text-wrapper {
-    padding: 24px 27px 59px;
+    padding: 24px 26px 59px;
   }
 }
 
@@ -155,13 +155,8 @@
 }
 
 .photos__user-name {
+  margin-right: 1px;
   font-weight: $bold-font-weight;
-}
-
-@media (min-width: $desktop-width) {
-  .photos__user-name {
-    margin-right: 2px;
-  }
 }
 
 .photos__post-time {

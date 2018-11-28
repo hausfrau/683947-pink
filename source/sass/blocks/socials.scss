@@ -1,5 +1,5 @@
 .socials {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,7 +18,7 @@
 .socials__list {
   display: flex;
   justify-content: space-between;
-  width: 182px;
+  width: 179px;
 
   @include reset-list;
 }

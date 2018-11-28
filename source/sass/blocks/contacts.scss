@@ -1,7 +1,7 @@
 .contacts {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -9,7 +9,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     width: 660px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     padding: 0 20px;
   }
 }
@@ -17,7 +17,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     width: 960px;
-    margin-bottom: 25px;
+    margin-bottom: 42px;
     padding: 0 10px;
   }
 }
@@ -205,6 +205,6 @@
 
 @media (min-width: $desktop-width) {
   .contacts__address {
-    padding-left: 7px;
+    padding-left: 8px;
   }
 }

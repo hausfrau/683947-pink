@@ -5,8 +5,8 @@
   align-items: center;
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 45px;
-  padding: 0 20px;
+  margin-bottom: 30px;
+  padding: 0 20px 13px;
   padding-top: 42px;
   box-sizing: border-box;
   text-align: center;
@@ -15,7 +15,7 @@
 @media (min-width: $tablet-width) {
   .feedbacks {
     width: 660px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     padding-top: 98px;
   }
 }
@@ -24,7 +24,7 @@
   .feedbacks {
     position: relative;
     width: 960px;
-    margin-bottom: 29px;
+    margin-bottom: 14px;
     padding: 0 10px;
     padding-top: 185px;
   }

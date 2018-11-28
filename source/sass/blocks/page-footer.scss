@@ -23,12 +23,18 @@
 
 @media (min-width: $desktop-width) {
   .page-footer--form {
-    padding-top: 64px;
+    padding-bottom: 34px;
   }
 }
 
 .page-footer--photo {
   padding-top: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer--photo {
+    padding-bottom: 35px;
+  }
 }
 
 .page-footer__title {
@@ -93,6 +99,18 @@
   padding-top: 55px;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer--form .page-footer__wrapper {
+    padding: 62px 20px 32px 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer--form .page-footer__wrapper {
+    padding: 63px 10px 32px;
+  }
+}
+
 .page-footer--photo .page-footer__wrapper {
   display: flex;
 }
@@ -116,9 +134,15 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer--photo .page-footer__wrapper {
+    padding: 30px 20px 20px;
+  }
+}
+
 @media (min-width: $desktop-width) {
-  .page-footer--form .page-footer__wrapper {
-    padding-top: 0;
+  .page-footer--photo .page-footer__wrapper {
+    padding: 28px 10px 20px;
   }
 }
 
@@ -130,6 +154,17 @@
   .page-footer__logo {
     margin-top: 6px;
     margin-bottom: 24px;
+  }
+
+  .page-footer--form .page-footer__logo {
+    margin: 0;
+    padding-bottom: 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer--form .page-footer__logo {
+    padding-bottom: 8px;
   }
 }
 
@@ -167,6 +202,12 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer--form .page-footer__academy-link {
+    margin: 0;
+  }
+}
+
 .page-footer__academy-link img {
   margin-left: 15px;
   padding-top: 2px;
@@ -192,8 +233,30 @@
   }
 }
 
+.page-footer--form .socials {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer--form .socials {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer--form .socials {
+    padding-top: 10px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .page-footer--form .socials__list {
     width: 180px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer--photo .socials__list {
+    width: 179px;
   }
 }
