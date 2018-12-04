@@ -11,7 +11,8 @@
 
 @media (min-width: $desktop-width) {
   .socials {
-    width: 166px;
+    width: 167px;
+    margin-top: -8px;
   }
 }
 
@@ -45,7 +46,15 @@
   border-radius: 45px;
   border-style: solid;
   border-width: 3px;
-  border-color: rgba(40, 54, 69, 0.1);
+  border-color: #e9ebec;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .socials__link--twitter {

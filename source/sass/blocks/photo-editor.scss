@@ -210,7 +210,55 @@
   display: flex;
 }
 
-label.crop img {
+.crop {
+  .photo-editor__tools-crop {
+    fill: $crimson-color;
+  }
+
+  &:hover .photo-editor__tools-crop {
+    opacity: 0.3;
+    fill: $basic-darker-color;
+  }
+
+  &:active .photo-editor__tools-crop {
+    opacity: 0.5;
+    fill: $basic-darker-color;
+  }
+}
+
+.exposure {
+  .photo-editor__tools-exposure {
+    fill: $crimson-color;
+  }
+
+  &:hover .photo-editor__tools-exposure {
+    opacity: 0.3;
+    fill: $basic-darker-color;
+  }
+
+  &:active .photo-editor__tools-exposure {
+    opacity: 0.5;
+    fill: $basic-darker-color;
+  }
+}
+
+.tint {
+  .photo-editor__tools-tint {
+    fill: $crimson-color;
+  }
+
+  &:hover .photo-editor__tools-tint {
+    opacity: 0.3;
+    fill: $basic-darker-color;
+  }
+
+  &:active .photo-editor__tools-tint {
+    opacity: 0.5;
+    fill: $basic-darker-color;
+  }
+}
+
+.photo-editor__tools-crop {
   display: flex;
   width: 48px;
   height: 48px;
@@ -219,7 +267,7 @@ label.crop img {
 }
 
 @media (min-width: $tablet-width) {
-  label.crop img {
+  .photo-editor__tools-crop {
     width: 22px;
     height: 22px;
     padding-bottom: 0;
@@ -228,13 +276,13 @@ label.crop img {
 }
 
 @media (min-width: $desktop-width) {
-  label.crop img {
+  .photo-editor__tools-crop {
     width: 46px;
     height: 46px;
   }
 }
 
-label.exposure img {
+.photo-editor__tools-exposure {
   display: flex;
   width: 48px;
   height: 48px;
@@ -242,7 +290,7 @@ label.exposure img {
 }
 
 @media (min-width: $tablet-width) {
-  label.exposure img {
+  .photo-editor__tools-exposure {
     width: 25px;
     height: 24px;
     margin-top: 7px;
@@ -252,7 +300,7 @@ label.exposure img {
 }
 
 @media (min-width: $desktop-width) {
-  label.exposure img {
+  .photo-editor__tools-exposure {
     width: 52px;
     height: 47px;
   }
@@ -277,7 +325,7 @@ label.tint {
   }
 }
 
-label.tint img {
+.photo-editor__tools-tint {
   display: flex;
   width: 31px;
   height: 31px;
@@ -286,7 +334,7 @@ label.tint img {
 }
 
 @media (min-width: $tablet-width) {
-  label.tint img {
+  .photo-editor__tools-tint {
     width: 16px;
     height: 16px;
     padding-bottom: 1px;
@@ -294,7 +342,7 @@ label.tint img {
 }
 
 @media (min-width: $desktop-width) {
-  label.tint img {
+  .photo-editor__tools-tint {
     width: 32px;
     height: 32px;
     padding-bottom: 1px;
@@ -344,6 +392,7 @@ label.tint img {
   position: absolute;
   top: -6px;
   right: 34px;
+  z-index: 1;
   width: 14px;
   height: 14px;
 
@@ -351,6 +400,10 @@ label.tint img {
   background-color: #f2f2f2;
   border: $crimson-color solid 2px;
   border-radius: 50%;
+
+  &:active {
+    background-color: $crimson-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -455,6 +508,17 @@ label.tint img {
   padding-bottom: 3px;
   color: $crimson-color;
   border-color: $crimson-color;
+
+  &:hover {
+    color: $white-color;
+    background-color: $crimson-color;
+  }
+
+  &:active {
+    color: #e06989;
+    background-color: $crimson-color;
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -478,6 +542,18 @@ label.tint img {
   padding-bottom: 3px;
   color: rgba(40, 54, 69, 0.1);
   border-color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    color: #cdd0d3;
+    background-color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0);
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {

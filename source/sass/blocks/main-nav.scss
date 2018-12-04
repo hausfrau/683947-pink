@@ -82,6 +82,20 @@
   display: block;
   margin: 0;
   padding: 0;
+
+  .main-nav__logo-mobile {
+    fill: #ffffff;
+  }
+
+  &:hover .main-nav__logo-mobile {
+    opacity: 1;
+    fill: #d22856;
+  }
+
+  &:active .main-nav__logo-mobile {
+    opacity: 0.3;
+    fill: #ffffff;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -89,6 +103,38 @@
     width: 146px;
     height: 40px;
     padding-bottom: 10px;
+
+    .main-nav__logo-tablet {
+      fill: #ffffff;
+    }
+
+    &:hover .main-nav__logo-tablet {
+      opacity: 1;
+      fill: #d22856;
+    }
+
+    &:active .main-nav__logo-tablet {
+      opacity: 0.3;
+      fill: #ffffff;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo {
+    .main-nav__logo-desktop {
+      fill: #ffffff;
+    }
+
+    &:hover .main-nav__logo-desktop {
+      opacity: 1;
+      fill: #d22856;
+    }
+
+    &:active .main-nav__logo-desktop {
+      opacity: 0.3;
+      fill: #ffffff;
+    }
   }
 }
 
@@ -140,25 +186,55 @@
   height: 24px;
 
   @include reset-button;
-}
 
-.main-nav__button--open {
-  width: 50px;
-  height: 24px;
-}
+  .button-svg__open {
+    fill: $white-color;
+  }
 
-.main-nav__button--open .button-svg__open {
-  display: inline-block;
-}
+  .button-svg__close {
+    fill: $white-color;
+  }
 
-.main-nav__button--open .button-svg__close {
-  display: none;
-}
+  &:hover {
+    .button-svg__open {
+      fill: $crimson-color;
+    }
 
-.main-nav__button--close {
-  width: 24px;
-  height: 24px;
-  padding-top: 0;
+    .button-svg__close {
+      fill: $crimson-color;
+    }
+  }
+
+  &:active {
+    .button-svg__open {
+      opacity: 0.3;
+      fill: $crimson-color;
+    }
+
+    .button-svg__close {
+      opacity: 0.3;
+      fill: $crimson-color;
+    }
+  }
+
+  &--open {
+    width: 50px;
+    height: 24px;
+  }
+
+  &--open .button-svg__open {
+    display: inline-block;
+  }
+
+  &--open .button-svg__close {
+    display: none;
+  }
+
+  &--close {
+    width: 24px;
+    height: 24px;
+    padding-top: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {

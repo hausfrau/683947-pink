@@ -38,12 +38,10 @@ var toggleMenuCloseClass = function () {
 
 window.addEventListener('resize', function (event) {
   if (minWidthDesktop.matches) {
-    console.log('desktop');
     removeMenuCloseClass();
     menuButton.style.display = 'none';
   } else {
     menuButton.style.display = 'inline-block';
-    console.log('not desktop');
     if (menuOpen == null || !menuOpen) {
       addMenuCloseClass();
 

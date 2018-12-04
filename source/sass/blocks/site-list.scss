@@ -23,15 +23,6 @@
   padding: 15px;
   border-top: solid 1px rgba(255, 255, 255, 0.15);
   border-bottom: solid 1px #000000;
-
-  &:hover,
-  &:focus {
-    color: $crimson-color;
-  }
-
-  &:active {
-    color: $basic-down-color;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -46,16 +37,36 @@
   padding: 0;
   text-decoration: none;
   cursor: pointer;
+
+  &:visited {
+    color: inherit;
+  }
+
+  &[href]:hover {
+    color: $crimson-color;
+  }
+
+  &[href]:active {
+    color: $crimson-color;
+    opacity: 0.3;
+  }
 }
 
-.site-list__link:visited {
-  color: inherit;
+@media (min-width: $desktop-width) {
+  .site-list__link:active {
+    color: $white-color;
+  }
 }
 
-.site-list__link:hover {
-  color: $crimson-color;
-}
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+  }
 
-.site-list__link:active {
-  color: $basic-down-color;
+  .site-list__item--active {
+    border-bottom: $white-color solid 2px;
+  }
 }
