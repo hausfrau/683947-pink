@@ -7,10 +7,13 @@
   </title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
-<svg style="display: none;">
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
+<!--<svg style="display: none;">
   <symbol id="logo-mobile" viewBox="0 0 74.426 22.859">
     <g>
       <path
@@ -153,7 +156,7 @@
       d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
     <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
   </symbol>
-</svg>
+</svg>-->
 <header class="page-header page-header--photo">
   <div class="page-header__wrapper">
     <nav class="main-nav">
@@ -164,32 +167,28 @@
               <title>
                 Логотип PINK
               </title>
-              <use xlink:href="#logo-mobile">
-              </use>
+              <use xlink:href="#logo-mobile"></use>
             </svg>
             <svg class="main-nav__logo-tablet" width="146.3px" height="40.375px" role="img">
               <title>
                 Логотип PINK
               </title>
-              <use xlink:href="#logo-tablet">
-              </use>
+              <use xlink:href="#logo-tablet"></use>
             </svg>
             <svg class="main-nav__logo-desktop" width="146.3px" height="40.375px" role="img">
               <title>
                 Логотип PINK
               </title>
-              <use xlink:href="#logo-desktop">
-              </use>
+              <use xlink:href="#logo-desktop"></use>
             </svg>
           </a>
           <button class="main-nav__button" type="button">
             <svg class="button-svg__open" width="49.945px" height="24.007px" aria-hidden="true" role="presentation">
-              <use xlink:href="#button-open">
-              </use>
+              <use xlink:href="#button-open"></use>
+              y
             </svg>
             <svg class="button-svg__close" width="23.867px" height="23.867px" aria-hidden="true" role="presentation">
-              <use xlink:href="#button-close">
-              </use>
+              <use xlink:href="#button-close"></use>
             </svg>
             <span class="visually-hidden">
               Открыть / закрыть меню
@@ -502,8 +501,7 @@
             <title>
               Кадрирование фото
             </title>
-            <use xlink:href="#icon-editor-crop">
-            </use>
+            <use xlink:href="#icon-editor-crop"></use>
           </svg>
         </label>
         <input class="visually-hidden photo-editor__tools-input photo-editor__tools-input--current crop" type="radio" name="tools" value="crop" id="crop">
@@ -518,8 +516,7 @@
             <title>
               Заливка
             </title>
-            <use xlink:href="#icon-editor-fill">
-            </use>
+            <use xlink:href="#icon-editor-fill"></use>
           </svg>
         </label>
         <input class="visually-hidden photo-editor__tools--input exposure" type="radio" name="tools" value="exposure" id="exposure">
@@ -534,8 +531,7 @@
             <title>
               Контрастность
             </title>
-            <use xlink:href="#icon-editor-contrast">
-            </use>
+            <use xlink:href="#icon-editor-contrast"></use>
           </svg>
         </label>
         <input class="visually-hidden photo-editor__tools-input tint" type="radio" name="tools" value="tint" id="tint">
@@ -562,15 +558,13 @@
         <title>
           Логотип PINK
         </title>
-        <use xlink:href="#footer-logo-mobile">
-        </use>
+        <use xlink:href="#footer-logo-mobile"></use>
       </svg>
       <svg class="page-footer__logo-desktop" width="146.3px" height="40.375px" role="img">
         <title>
           Логотип PINK
         </title>
-        <use xlink:href="#footer-logo-desktop">
-        </use>
+        <use xlink:href="#footer-logo-desktop"></use>
       </svg>
     </a>
     <section class="socials">
@@ -595,8 +589,7 @@
     <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт в HTML Academy">
       Разработано
       <svg class="page-footer__academy-logo" width="26.943px" height="34.09px">
-        <use xlink:href="#logo-htmlacademy">
-        </use>
+        <use xlink:href="#logo-htmlacademy"></use>
       </svg>
     </a>
   </div>
