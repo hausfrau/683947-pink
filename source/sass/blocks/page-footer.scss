@@ -146,8 +146,40 @@
   }
 }
 
+.page-footer__logo-mobile {
+  display: inline-block;
+  fill: #283645;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo-mobile {
+    display: none;
+  }
+}
+
+.page-footer__logo-desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo-desktop {
+    display: inline-block;
+    fill: #283645;
+  }
+}
+
 .page-footer__logo {
   margin-bottom: 33px;
+
+  &:hover .page-footer__logo-mobile {
+    opacity: 1;
+    fill: #d22856;
+  }
+
+  &:active .page-footer__logo-mobile {
+    opacity: 0.3;
+    fill: #283645;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -163,18 +195,22 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer__logo {
+    margin-bottom: 33px;
+
+    &:hover .page-footer__logo-desktop {
+      opacity: 1;
+      fill: #d22856;
+    }
+
+    &:active .page-footer__logo-desktop {
+      opacity: 0.3;
+      fill: #283645;
+    }
+  }
+
   .page-footer--form .page-footer__logo {
     padding-bottom: 8px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer__logo img {
-    content: "";
-    width: 146px;
-    height: 40px;
-    background-image: url("../img/logo-pink-blue-desktop.svg");
-    background-repeat: no-repeat;
   }
 }
 
@@ -185,6 +221,18 @@
   @include reset-button;
   text-decoration: none;
   line-height: 18px;
+
+  .page-footer__academy-logo {
+    fill: #d22856;
+  }
+
+  &:hover .page-footer__academy-logo {
+    fill: #283645;
+  }
+
+  &:active .page-footer__academy-logo {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -197,7 +245,7 @@
 @media (min-width: $desktop-width) {
   .page-footer__academy-link {
     width: 153px;
-    margin-bottom: 8px;
+    margin-bottom: 21px;
     font-size: $middle-font-size;
   }
 }
@@ -208,27 +256,27 @@
   }
 }
 
-.page-footer__academy-link img {
+.page-footer__academy-logo {
   margin-left: 15px;
   padding-top: 2px;
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer__academy-link img {
+  .page-footer__academy-logo {
     padding-top: 10px;
     margin-left: 14px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer--photo .page-footer__academy-link img {
+  .page-footer--photo .page-footer__academy-logo {
     padding-top: 8px;
     margin-left: 13px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer--form .page-footer__academy-link img {
+  .page-footer--form .page-footer__academy-logo {
     padding-top: 6px;
   }
 }

@@ -175,6 +175,26 @@
 
 .contacts__email {
   padding-left: 17px;
+  cursor: pointer;
+
+  a {
+    font-size: $big-font-size;
+    font-weight: $light-font-weight;
+    line-height: 29px;
+    text-align: center;
+    color: $crimson-color;
+    text-decoration: none;
+  }
+
+  &:hover a {
+    color: $basic-darker-color;
+    text-decoration: underline;
+  }
+
+  &:active a {
+    opacity: 0.3;
+    color: $basic-darker-color;
+  }
 }
 
 @media (min-width: $tablet-width) {

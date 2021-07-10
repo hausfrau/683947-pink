@@ -147,10 +147,19 @@
   margin-right: 19px;
 
   @include reset-button;
-  border-color: rgba(40, 54, 69, 0.3);
+  border-color: $basic-darker-color;
+  opacity: 0.3;
   border-style: solid;
   border-width: 3px;
   border-radius: 50%;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -164,6 +173,7 @@
   height: 12px;
   margin-right: 17px;
   border-color: $basic-darker-color;
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {
@@ -185,6 +195,15 @@
     height: 42px;
     background-image: url("../img/icon-review-arrow-left.svg");
     background-repeat: no-repeat;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 
   .slider__next-slide {
@@ -195,5 +214,14 @@
     height: 42px;
     background-image: url("../img/icon-review-arrow-right.svg");
     background-repeat: no-repeat;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }
